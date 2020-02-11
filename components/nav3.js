@@ -49,7 +49,7 @@ export const DesktopHeader1 = () => {
     <AppBar position='sticky' style={{ boxShadow: '0 8px 6px -6px #AAAAAA', background: '#FFFFFF', height: '42px' }} >
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map(section => (
-          <Button disableRipple fullWidth disableFocusRipple variant='text'>
+          <Button size='large' disableRipple fullWidth disableFocusRipple variant='text'>
             <Link
               color="inherit"
               noWrap

@@ -817,6 +817,7 @@ var DesktopHeader1 = function DesktopHeader1() {
     __self: this
   }, sections.map(function (section) {
     return __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      size: "large",
       disableRipple: true,
       fullWidth: true,
       disableFocusRipple: true,
@@ -30358,17 +30359,39 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function App() {
   var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  var thisIsMyCopy2 = '<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-127071484-15"></script>';
+  var thisIsMyCopy3 = "<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-127071484-15');</script>";
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "content",
+    dangerouslySetInnerHTML: {
+      __html: thisIsMyCopy2
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "content",
+    dangerouslySetInnerHTML: {
+      __html: thisIsMyCopy3
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
     },
     __self: this
   }), __jsx("blockquote", {
     "class": "twitter-tweet",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 14
     },
     __self: this
   }, __jsx("p", {
@@ -30376,14 +30399,14 @@ function App() {
     dir: "ltr",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 14
     },
     __self: this
   }, "I will open Free self Defense Coaching Centre for Girls in Hari Nagar Vidhanasabha in next 30 Days. It was my promise in my manifesto, I lost but i will try my best to fullfil my Promise to my people on my own Capacity"), "\u2014 Tajinder Pal Singh Bagga (@TajinderBagga) ", __jsx("a", {
     href: "https://twitter.com/TajinderBagga/status/1227191554852315136?ref_src=twsrc%5Etfw",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 14
     },
     __self: this
   }, "February 11, 2020")), " ", __jsx("script", {
@@ -30392,7 +30415,7 @@ function App() {
     charset: "utf-8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 14
     },
     __self: this
   }), __jsx("div", {
@@ -30402,7 +30425,7 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 16
     },
     __self: this
   }), __jsx("iframe", {
@@ -30414,7 +30437,7 @@ function App() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 18
     },
     __self: this
   }));
