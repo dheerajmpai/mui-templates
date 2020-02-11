@@ -43,7 +43,8 @@ export const Title4 = title => {
 
 export const Image1 = src => {
     const source = src.src
-    return <div style={{ textAlign: 'center' }} ><img src={source} style={{ borderRadius: '1px', width: '100%', margin: '2px auto' }} /></div>
+    
+    return <div style={{ textAlign: 'center' }} ><img {...src} src={source} style={{ borderRadius: '1px', width: '100%', margin: '2px auto' }} /></div>
 
 }
 
