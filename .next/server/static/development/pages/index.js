@@ -5080,6 +5080,9 @@ function App() {
     },
     __self: this
   }), __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    style: {
+      margin: '20px 20px 20px 20px auto'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -5094,29 +5097,7 @@ function App() {
   }), __jsx(_grid1__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }), __jsx("div", {
-    className: "content",
-    dangerouslySetInnerHTML: {
-      __html: thisIsMyCopy
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }), __jsx("iframe", {
-    width: "560",
-    height: "315",
-    src: "https://www.youtube.com/embed/ZS3O0OOn0a0",
-    frameborder: "0",
-    allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-    allowfullscreen: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 17
     },
     __self: this
   })));
