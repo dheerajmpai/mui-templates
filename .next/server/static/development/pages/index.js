@@ -4648,13 +4648,67 @@ var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function App() {
-  return __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     },
     __self: this
-  });
+  }), __jsx("blockquote", {
+    class: "twitter-tweet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("p", {
+    lang: "en",
+    dir: "ltr",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "I will open Free self Defense Coaching Centre for Girls in Hari Nagar Vidhanasabha in next 30 Days. It was my promise in my manifesto, I lost but i will try my best to fullfil my Promise to my people on my own Capacity"), "\u2014 Tajinder Pal Singh Bagga (@TajinderBagga) ", __jsx("a", {
+    href: "https://twitter.com/TajinderBagga/status/1227191554852315136?ref_src=twsrc%5Etfw",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "February 11, 2020")), " ", __jsx("script", {
+    async: true,
+    src: "https://platform.twitter.com/widgets.js",
+    charset: "utf-8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "content",
+    dangerouslySetInnerHTML: {
+      __html: thisIsMyCopy
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }), __jsx("iframe", {
+    width: "560",
+    height: "315",
+    src: "https://www.youtube.com/embed/ZS3O0OOn0a0",
+    frameborder: "0",
+    allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+    allowfullscreen: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }));
 }
 
 /***/ }),
