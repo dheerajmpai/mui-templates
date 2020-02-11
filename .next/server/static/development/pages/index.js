@@ -93,6 +93,180 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/comps.js":
+/*!*****************************!*\
+  !*** ./components/comps.js ***!
+  \*****************************/
+/*! exports provided: Para1, Para2, Title1, Title2, Title4, Image1, featuredImage1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Para1", function() { return Para1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Para2", function() { return Para2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title1", function() { return Title1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title2", function() { return Title2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title4", function() { return Title4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Image1", function() { return Image1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "featuredImage1", function() { return featuredImage1; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/comps.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createMuiTheme"])(); // style={{ width: '100%', textAlign: 'center', margin: '20px auto', fontFamily: fontFamily1 }}
+
+const Para1 = para => {
+  const textFontSize = '20px';
+  const fontFamily1 = '"Helvatica", Times, sans-serif';
+  const fontFamily2 = '"Roboto", Times, sans-serif';
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    variant: "body1",
+    style: {
+      textAlign: 'justify',
+      '@media (min-width:1000px)': {
+        fontSize: '1px'
+      },
+      fontFamily: fontFamily1
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, para.children);
+};
+const Para2 = para => {
+  const textFontSize = '20px';
+  const fontFamily1 = '"Helvatica", Times, sans-serif';
+  const fontFamily2 = '"Roboto", Times, sans-serif';
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    variant: "body1",
+    style: {
+      textAlign: 'justify',
+      fontSize: textFontSize,
+      fontFamily: fontFamily2
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, para.children);
+};
+const Title1 = title => {
+  const textFontSize = '45px';
+  const fontFamily1 = '"Helvatica", Times, sans-serif';
+  const fontFamily2 = '"Roboto", Times, sans-serif';
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    variant: "h3",
+    style: {
+      fontFamily: fontFamily1
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, " ", title.children, " ");
+};
+const Title2 = para => {
+  const textFontSize = '20px';
+  const fontFamily1 = '"Helvatica", Times, sans-serif';
+  const fontFamily2 = '"Roboto", Times, sans-serif';
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    variant: "body1",
+    style: {
+      textAlign: 'justify',
+      fontSize: textFontSize,
+      fontFamily: fontFamily2
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: undefined
+  }, para.children);
+};
+const Title4 = title => {
+  const textFontSize = '30px';
+  const fontFamily1 = '"Helvatica", Times, sans-serif';
+  const fontFamily2 = '"Roboto", Times, sans-serif';
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    variant: "h4",
+    style: {
+      fontFamily: fontFamily1,
+      fontSize: textFontSize
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: undefined
+  }, " ", title.children, " ");
+};
+const Image1 = src => {
+  const source = src.src;
+  return __jsx("div", {
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, __jsx("img", _extends({}, src, {
+    src: source,
+    style: {
+      borderRadius: '1px',
+      width: '100%',
+      margin: '2px auto'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  })));
+};
+const featuredImage1 = src => {
+  const source = src.src;
+  return __jsx("div", {
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, __jsx("img", {
+    src: source,
+    style: {
+      borderRadius: '8px',
+      width: '80%',
+      margin: '2px auto'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }));
+};
+
+/***/ }),
+
 /***/ "./components/draw1.js":
 /*!*****************************!*\
   !*** ./components/draw1.js ***!
@@ -976,7 +1150,7 @@ const DesktopHeader1 = () => {
     },
     __self: undefined
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    size: "large",
+    size: "small",
     fullWidth: true,
     disableFocusRipple: true,
     variant: "text",
@@ -4704,6 +4878,161 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
+/***/ "./pages/grid1.js":
+/*!************************!*\
+  !*** ./pages/grid1.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return GridPage; });
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Divider */ "@material-ui/core/Divider");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Container */ "@material-ui/core/Container");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_comps__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/comps */ "./components/comps.js");
+var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/pages/grid1.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
+
+
+
+
+
+
+function GridPage() {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    container: true,
+    spacing: 1,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    sm: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    elevation: 0,
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "/brand1.jpeg",
+    style: {
+      borderRadius: '1px',
+      width: '60%',
+      margin: '2px auto'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    sm: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_5__["Para1"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Build your brand by advertising on the Hyperweb Ad Network. Publish your ads on The South Asian Express, Awakened Indian and Hyperweb AI. Claim your $200 ad credits now! "))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    sm: 5,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation website technologies.")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    sm: 7,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    elevation: 0,
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "/speed2.jpeg",
+    style: {
+      borderRadius: '1px',
+      width: '60%',
+      margin: '2px auto'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  })))));
+}
+
+/***/ }),
+
 /***/ "./pages/index.js":
 /*!************************!*\
   !*** ./pages/index.js ***!
@@ -4716,10 +5045,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_nav2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/nav2 */ "./components/nav2.js");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Container */ "@material-ui/core/Container");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_nav2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/nav2 */ "./components/nav2.js");
+/* harmony import */ var _grid1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./grid1 */ "./pages/grid1.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 function App() {
   var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
@@ -4732,7 +5066,7 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 13
     },
     __self: this
   }), __jsx("div", {
@@ -4742,44 +5076,25 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 14
     },
     __self: this
-  }), __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
-  }), __jsx("blockquote", {
-    class: "twitter-tweet",
+  }, __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 16
     },
     __self: this
-  }, __jsx("p", {
-    lang: "en",
-    dir: "ltr",
+  }), __jsx(_grid1__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, "I will open Free self Defense Coaching Centre for Girls in Hari Nagar Vidhanasabha in next 30 Days. It was my promise in my manifesto, I lost but i will try my best to fullfil my Promise to my people on my own Capacity"), "\u2014 Tajinder Pal Singh Bagga (@TajinderBagga) ", __jsx("a", {
-    href: "https://twitter.com/TajinderBagga/status/1227191554852315136?ref_src=twsrc%5Etfw",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, "February 11, 2020")), " ", __jsx("script", {
-    async: true,
-    src: "https://platform.twitter.com/widgets.js",
-    charset: "utf-8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 18
     },
     __self: this
   }), __jsx("div", {
@@ -4789,7 +5104,7 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 19
     },
     __self: this
   }), __jsx("iframe", {
@@ -4801,10 +5116,10 @@ function App() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
     },
     __self: this
-  }));
+  })));
 }
 
 /***/ }),
@@ -4843,6 +5158,17 @@ module.exports = require("@material-ui/core/Button");
 
 /***/ }),
 
+/***/ "@material-ui/core/Container":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/Container" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Container");
+
+/***/ }),
+
 /***/ "@material-ui/core/Divider":
 /*!********************************************!*\
   !*** external "@material-ui/core/Divider" ***!
@@ -4862,6 +5188,17 @@ module.exports = require("@material-ui/core/Divider");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Drawer");
+
+/***/ }),
+
+/***/ "@material-ui/core/Grid":
+/*!*****************************************!*\
+  !*** external "@material-ui/core/Grid" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Grid");
 
 /***/ }),
 
@@ -4939,6 +5276,17 @@ module.exports = require("@material-ui/core/ListItemIcon");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ListItemText");
+
+/***/ }),
+
+/***/ "@material-ui/core/Paper":
+/*!******************************************!*\
+  !*** external "@material-ui/core/Paper" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Paper");
 
 /***/ }),
 

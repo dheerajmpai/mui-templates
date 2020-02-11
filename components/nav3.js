@@ -51,7 +51,7 @@ export const DesktopHeader1 = () => {
         {sections.map(section => (
           <Link href={section.url}>
             {/* disableRipple */}
-          <Button size='large'  fullWidth disableFocusRipple variant='text'>
+          <Button size='small'  fullWidth disableFocusRipple variant='text'>
             <mLink
               color="inherit"
               noWrap
