@@ -49,18 +49,22 @@ export const DesktopHeader1 = () => {
     <AppBar position='sticky' style={{ boxShadow: '0 8px 6px -6px #AAAAAA', background: '#FFFFFF', height: '42px' }} >
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map(section => (
-          <Button size='large' disableRipple fullWidth disableFocusRipple variant='text'>
-            <Link
+          <Link href={section.url}>
+            {/* disableRipple */}
+          <Button size='large'  fullWidth disableFocusRipple variant='text'>
+            <mLink
               color="inherit"
               noWrap
               key={section.title}
               variant="body2"
               href={section.url}
               className={classes.toolbarLink}
-            >
+            > 
               {section.title}
-            </Link>
+              
+            </mLink>
           </Button>
+          </Link>
         ))}
         {/*<Link href='/about'>Know about us</Link>*/}
       </Toolbar>
@@ -72,8 +76,8 @@ export const DesktopHeader2 = () => {
   const classes = useStyles();
   return (
     <React.Fragment >
-      <AppBar position='static' style={{ background: '#FFFB3A', height: '120px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
-        <Toolbar className={classes.toolbar} style={{ height: '120px', color: 'red' }}>
+      <AppBar position='static' style={{ background: '#FFFFFF', height: '80px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
+        <Toolbar className={classes.toolbar} style={{ height: '80px', color: 'red' }}>
           <Button size="small"> <Link href='/signup'>  Subscribe</Link></Button>
           <Typography
             component="h2"

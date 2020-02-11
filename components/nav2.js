@@ -12,8 +12,8 @@ import Link from 'next/link'
 import DesktopHeader from './nav';
 import MobileDrawer from './draw1';
 import Hidden from '@material-ui/core/Hidden';
-import { DesktopHeader1, DesktopHeader2 } from './nav3';
-
+import {DesktopHeader1, DesktopHeader2 } from './nav3';
+import {Heads} from './heads';
 
 const useStyles = makeStyles(theme => ({
   toolbar: {
@@ -46,13 +46,13 @@ export default function Header() {
   // const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   //  const { sections, title } = props;
-  const title = 'News Now'
+  // const title = 'News Now'
   return (
     <React.Fragment >
       {/* {mobOrDesktop} */}
       {/* <MobileDrawer/> */}
       {/* <DesktopHeader /> */}
-
+      <Heads/>
       <Hidden xsDown implementation="css">
 
         {/* <DesktopHeader1 /> */}

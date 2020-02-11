@@ -404,6 +404,65 @@ function MobileDrawer() {
 
 /***/ }),
 
+/***/ "./components/heads.js":
+/*!*****************************!*\
+  !*** ./components/heads.js ***!
+  \*****************************/
+/*! exports provided: Heads */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Heads", function() { return Heads; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/heads.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const Heads = () => {
+  var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  var thisIsMyCopy2 = '<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-127071484-15"></script>';
+  var thisIsMyCopy3 = "<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-127071484-15');</script>";
+  return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, "Bong Bong"), __jsx("div", {
+    className: "content",
+    dangerouslySetInnerHTML: {
+      __html: thisIsMyCopy2
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }), __jsx("div", {
+    className: "content",
+    dangerouslySetInnerHTML: {
+      __html: thisIsMyCopy3
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }));
+};
+
+/***/ }),
+
 /***/ "./components/nav.js":
 /*!***************************!*\
   !*** ./components/nav.js ***!
@@ -680,8 +739,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/Hidden */ "@material-ui/core/Hidden");
 /* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _nav3__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./nav3 */ "./components/nav3.js");
+/* harmony import */ var _heads__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./heads */ "./components/heads.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/nav2.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -726,14 +787,20 @@ function Header() {
   // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
   // const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
   //  const { sections, title } = props;
-  const title = 'News Now';
+  // const title = 'News Now'
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
-  }, __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13___default.a, {
+  }, __jsx(_heads__WEBPACK_IMPORTED_MODULE_15__["Heads"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13___default.a, {
     xsDown: true,
     implementation: "css",
     __source: {
@@ -901,18 +968,24 @@ const DesktopHeader1 = () => {
       lineNumber: 50
     },
     __self: undefined
-  }, sections.map(section => __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    size: "large",
-    disableRipple: true,
-    fullWidth: true,
-    disableFocusRipple: true,
-    variant: "text",
+  }, sections.map(section => __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
+    href: section.url,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     },
     __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
+  }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    size: "large",
+    fullWidth: true,
+    disableFocusRipple: true,
+    variant: "text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: undefined
+  }, __jsx("mLink", {
     color: "inherit",
     noWrap: true,
     key: section.title,
@@ -921,55 +994,55 @@ const DesktopHeader1 = () => {
     className: classes.toolbarLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 55
     },
     __self: undefined
-  }, section.title)))));
+  }, section.title))))));
 };
 const DesktopHeader2 = () => {
   const classes = useStyles();
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 78
     },
     __self: undefined
   }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
     position: "static",
     style: {
-      background: '#FFFB3A',
-      height: '120px',
+      background: '#FFFFFF',
+      height: '80px',
       color: 'red',
       boxShadow: '0 3px 5px #FFFFFF'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 79
     },
     __self: undefined
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: classes.toolbar,
     style: {
-      height: '120px',
+      height: '80px',
       color: 'red'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 80
     },
     __self: undefined
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
     size: "small",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 81
     },
     __self: undefined
   }, " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
     href: "/signup",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 81
     },
     __self: undefined
   }, "  Subscribe")), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -981,19 +1054,19 @@ const DesktopHeader2 = () => {
     className: classes.toolbarTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 82
     },
     __self: undefined
   }, title), __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 92
     },
     __self: undefined
   }, __jsx(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 93
     },
     __self: undefined
   })), __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1001,14 +1074,14 @@ const DesktopHeader2 = () => {
     size: "small",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 95
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
     href: "/signup",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 96
     },
     __self: undefined
   }, "Sign up")))));
@@ -4659,7 +4732,7 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }), __jsx("div", {
@@ -4669,20 +4742,20 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }), __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }), __jsx("blockquote", {
     class: "twitter-tweet",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }, __jsx("p", {
@@ -4690,14 +4763,14 @@ function App() {
     dir: "ltr",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }, "I will open Free self Defense Coaching Centre for Girls in Hari Nagar Vidhanasabha in next 30 Days. It was my promise in my manifesto, I lost but i will try my best to fullfil my Promise to my people on my own Capacity"), "\u2014 Tajinder Pal Singh Bagga (@TajinderBagga) ", __jsx("a", {
     href: "https://twitter.com/TajinderBagga/status/1227191554852315136?ref_src=twsrc%5Etfw",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }, "February 11, 2020")), " ", __jsx("script", {
@@ -4706,7 +4779,7 @@ function App() {
     charset: "utf-8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }), __jsx("div", {
@@ -4716,7 +4789,7 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }), __jsx("iframe", {
@@ -4728,7 +4801,7 @@ function App() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
   }));
@@ -4998,6 +5071,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 
