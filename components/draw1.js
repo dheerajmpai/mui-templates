@@ -14,7 +14,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
 import Link from 'next/link';
 import Typography from '@material-ui/core/Typography';
-
+import {COMPANY_NAME} from '../constants';
 // import {sections as sec} from './nav2';
 
 const sec = [{ 'title': 'Nation', 'url': '/nation' },
@@ -106,7 +106,7 @@ export default function MobileDrawer() {
     { 'title': 'Subscribe', 'url': '/subscribe' },
 
   ]
-  const title = 'News Now'
+  const title = COMPANY_NAME;
 
 
   return (
