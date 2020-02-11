@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const MonthNames = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"];\nexport const NumberRegex = /^[0-9\\b]+$/;","map":null,"metadata":{},"sourceType":"module"}
