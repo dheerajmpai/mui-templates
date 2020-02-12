@@ -5059,14 +5059,20 @@ function App() {
   var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
   var thisIsMyCopy2 = '<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-127071484-15"></script>';
   var thisIsMyCopy3 = "<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-127071484-15');</script>";
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');"), __jsx("div", {
     className: "content",
     dangerouslySetInnerHTML: {
       __html: thisIsMyCopy2
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }), __jsx("div", {
@@ -5076,7 +5082,7 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   }), __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -5085,19 +5091,28 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
-  }, __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx("div", {
+    style: {
+      fontFamily: "'Anton', sans-serif"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
+    },
+    __self: this
+  }, "Hello Anton here"), __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     },
     __self: this
   }), __jsx(_grid1__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 23
     },
     __self: this
   })));

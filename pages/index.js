@@ -9,11 +9,17 @@ export default function App() {
 
     var thisIsMyCopy3 = "<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-127071484-15');</script>";
     return (<>
-
-        <div className="content" dangerouslySetInnerHTML={{ __html: thisIsMyCopy2 }}></div>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');
+        </style>
+        <div className="content"  dangerouslySetInnerHTML={{ __html: thisIsMyCopy2 }}></div>
         <div className="content" dangerouslySetInnerHTML={{ __html: thisIsMyCopy3 }}></div>
-        <Container style={{margin : '20px 20px 20px 20px auto'}}>
+        <Container style={{ margin: '20px 20px 20px 20px auto' }}>
+            <div style={{fontFamily: "'Anton', sans-serif"}}>
+                Hello Anton here
+            </div>
             <Header />
+
             <GridPage />
         </Container>
     </>)
