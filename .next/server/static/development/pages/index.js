@@ -5270,26 +5270,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
 function GridPage() {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    container: true,
-    spacing: 1,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  const Mar = __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 12
     },
     __self: this
   }, __jsx("div", {
@@ -5298,7 +5284,40 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 12
+    },
+    __self: this
+  }, " "));
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    container: true,
+    spacing: 1,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, __jsx("div", {
+    style: {
+      margin: '50px 0px 50px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
     },
     __self: this
   }, " ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -5307,7 +5326,7 @@ function GridPage() {
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -5317,7 +5336,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, __jsx("img", {
@@ -5329,7 +5348,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -5343,26 +5362,26 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Title3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, "BUILD YOUR BRAND")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -5385,33 +5404,33 @@ function GridPage() {
       lineNumber: 29
     },
     __self: this
-  }, "Read More"))), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, "Read More"))), Mar, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
     color: "primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "Claim your $200 ad credits now!"))), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, "Claim your $200 ad credits now!")))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     __source: {
@@ -5475,39 +5494,39 @@ function GridPage() {
       lineNumber: 42
     },
     __self: this
-  }, "Read More"))), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, "Read More"))), Mar, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
     color: "primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
-  }, "Start Building your website for FREE!")))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "Start Building your website for FREE!"))), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     sm: 7,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -5517,7 +5536,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, __jsx("img", {
@@ -5529,7 +5548,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -5537,7 +5556,7 @@ function GridPage() {
     xs: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, __jsx("div", {
@@ -5546,7 +5565,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, " ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -5555,7 +5574,7 @@ function GridPage() {
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 58
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -5565,7 +5584,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   }, __jsx("img", {
@@ -5577,7 +5596,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -5591,87 +5610,87 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 64
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Title3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   }, "CONTRIBUTE TO OPENSOURCE SOFTWARES")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
-  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }), Mar, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 70
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 70
     },
     __self: this
   }, " Work on Open-source softwares that are used by thousands of users worldwide. Intern at Hyperweb AI. Learn, Build, contribute and have fun building latest and the best technology that change the world. ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "/opensource",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 70
     },
     __self: this
-  }, "Read More"), " ")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: this
-  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, "Read More"), " ")), Mar, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 73
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "/intern",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 73
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
     color: "primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 73
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 73
     },
     __self: this
-  }, "Apply for Internship!"))))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "Apply for Internship!")))), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 78
     },
     __self: this
   }, __jsx("div", {
@@ -5680,7 +5699,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 78
     },
     __self: this
   }, " ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -5694,66 +5713,60 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 80
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 81
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Title3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 81
     },
     __self: this
   }, "JOIN THE COMMUNITY")), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 83
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 83
     },
     __self: this
   }, "Join the Hyperweb AI community in developing impactful technologies that change the world.", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "/slack",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 83
     },
     __self: this
-  }, "Read More")), "  "), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
-    },
-    __self: this
-  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, "Read More")), "  "), Mar, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 86
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
     color: "primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 86
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 86
     },
     __self: this
   }, " Join the Slack group Now!"))), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -5763,29 +5776,35 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 87
     },
     __self: this
   }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 87
     },
     __self: this
   }, "Not on Slack? Join using ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "/whatsapp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 87
     },
     __self: this
-  }, "Whatsapp!")), "  ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "Whatsapp!")), "  "), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 93
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -5795,7 +5814,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 94
     },
     __self: this
   }, __jsx("img", {
@@ -5807,7 +5826,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 94
     },
     __self: this
   }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -5815,7 +5834,7 @@ function GridPage() {
     xs: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 98
     },
     __self: this
   }, __jsx("div", {
@@ -5824,7 +5843,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 98
     },
     __self: this
   }, " "))));
