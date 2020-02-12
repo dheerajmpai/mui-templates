@@ -33,7 +33,7 @@ export default function GridPage() {
 
                 </Grid>
 
-                {/* <Divider2 /> */}
+                {/* Item2 */}
                 <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
 
                 <Grid item xs={12} sm={5} style={{ textAlign: 'center', verticalAlign: 'middle', lineHeight: '100%' }} >
@@ -59,7 +59,7 @@ export default function GridPage() {
                 </Grid>
 
                 {/* <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid> */}
-
+                {/* Item 3 */}
                 <Grid item xs={12} sm={6} style={{ textAlign: 'center', verticalAlign: 'middle', lineHeight: '100%' }}>
 
                     <Paper elevation={0} ><Title3>CONTRIBUTE TO OPENSOURCE SOFTWARES</Title3></Paper>
@@ -69,7 +69,7 @@ export default function GridPage() {
                     <Paper elevation={0} ><Link href='/intern'><Button color='primary'><Para3>Apply for Internship!</Para3></Button></Link></Paper>
 
                 </Grid>
-=
+                {/* Item 4 */}
                 <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
 
                 <Grid item xs={12} sm={5} style={{ textAlign: 'center', verticalAlign: 'middle', lineHeight: '100%' }} >
@@ -78,7 +78,7 @@ export default function GridPage() {
                     <Paper elevation={0}><Para3>Join the Hyperweb AI community in developing impactful technologies that change the world.<Link href='/slack'>Read More</Link></Para3>  </Paper>
                     <Divider2 />
                     <Paper elevation={0} ><Button color='primary'><Para3> Join the Slack group Now!</Para3></Button></Paper>
-                    <Paper elevation={0} style={{textAlign:'center'}}><Para3>Not on Slack? Join using <Link href='/whatsapp'>Whatsapp!</Link></Para3>  </Paper>
+                    <Paper elevation={0} style={{ textAlign: 'center' }}><Para3>Not on Slack? Join using <Link href='/whatsapp'>Whatsapp!</Link></Para3>  </Paper>
 
 
                 </Grid>

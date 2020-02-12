@@ -329,31 +329,46 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
  // import {sections as sec} from './nav2';
+// const sec = [{ 'title': 'Nation', 'url': '/nation' },
+// { 'title': 'World', 'url': '/world' },
+// { 'title': 'Politics', 'url': '/politics' },
+// { 'title': 'Bussiness', 'url': '/biz' },
+// { 'title': 'Sports', 'url': '/sports' },
+// { 'title': 'Trending', 'url': '/trending' },
+// { 'title': 'Jobs', 'url': '/jobs' },
+// { 'title': 'About Us', 'url': 'https://news.tess.now.sh/about' },
+// ]
 
 var sec = [{
-  'title': 'Nation',
+  'title': 'Services',
   'url': '/nation'
 }, {
-  'title': 'World',
-  'url': '/world'
-}, {
-  'title': 'Politics',
+  'title': 'Research',
   'url': '/politics'
 }, {
-  'title': 'Bussiness',
-  'url': '/biz'
+  'title': 'Advertise',
+  'url': '/grow'
 }, {
-  'title': 'Sports',
-  'url': '/sports'
+  'title': 'Build',
+  'url': '/build'
 }, {
-  'title': 'Trending',
-  'url': '/trending'
+  'title': 'Resources',
+  'url': '/resources'
+}, {
+  'title': 'Partner with Us',
+  'url': '/partners'
+}, {
+  'title': 'Internships',
+  'url': '/intern'
 }, {
   'title': 'Jobs',
   'url': '/jobs'
 }, {
   'title': 'About Us',
-  'url': 'https://news.tess.now.sh/about'
+  'url': '/about'
+}, {
+  'title': 'Contact Us',
+  'url': '/contact'
 }];
 var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__["makeStyles"])(function (theme) {
   return {
@@ -413,13 +428,13 @@ function MobileDrawer() {
       onKeyDown: toggleDrawer(side, false),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 89
       },
       __self: this
     }, __jsx(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_12__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 95
       },
       __self: this
     }, ['Sign Up', 'Starred'].map(function (text, index) {
@@ -428,45 +443,45 @@ function MobileDrawer() {
         key: text,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 97
         },
         __self: this
       }, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 98
         },
         __self: this
       }, index % 2 === 0 ? __jsx(_material_ui_icons_MoveToInbox__WEBPACK_IMPORTED_MODULE_17___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 98
         },
         __self: this
       }) : __jsx(_material_ui_icons_Mail__WEBPACK_IMPORTED_MODULE_18___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 98
         },
         __self: this
       })), __jsx(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_16__["default"], {
         primary: text,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 99
         },
         __self: this
       }));
     })), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_13__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 103
       },
       __self: this
     }), __jsx(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_12__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90
+        lineNumber: 104
       },
       __self: this
     }, sec.map(function (text, index) {
@@ -474,7 +489,7 @@ function MobileDrawer() {
         href: text.url,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 106
         },
         __self: this
       }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -482,26 +497,26 @@ function MobileDrawer() {
         key: text.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 107
         },
         __self: this
       }, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 108
         },
         __self: this
       }, __jsx(_material_ui_icons_MoveToInbox__WEBPACK_IMPORTED_MODULE_17___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 108
         },
         __self: this
       }), " "), __jsx(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_16__["default"], {
         primary: text.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 109
         },
         __self: this
       })));
@@ -519,7 +534,7 @@ function MobileDrawer() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 127
     },
     __self: this
   }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -532,7 +547,7 @@ function MobileDrawer() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 128
     },
     __self: this
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_20__["default"], {
@@ -541,20 +556,20 @@ function MobileDrawer() {
     className: classes.toolbarSecondary,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 129
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     onClick: toggleDrawer('left', true),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 130
     },
     __self: this
   }, __jsx(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_19___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 130
     },
     __self: this
   })), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_23__["default"], {
@@ -565,9 +580,12 @@ function MobileDrawer() {
     height: "80px",
     noWrap: true,
     className: classes.toolbarTitle,
+    style: {
+      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_24__["FONT_1"]
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 131
     },
     __self: this
   }, title))), __jsx(_material_ui_core_Drawer__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -575,7 +593,7 @@ function MobileDrawer() {
     onClose: toggleDrawer('left', false),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 161
     },
     __self: this
   }, sideList('left')));
@@ -34086,7 +34104,7 @@ function GridPage() {
       lineNumber: 69
     },
     __self: this
-  }, "Apply for Internship!"))))), "=", __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  }, "Apply for Internship!"))))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
     item: true,
     xs: 12,
     __source: {
@@ -34309,7 +34327,7 @@ function App() {
     },
     __self: this
   }), __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    maxWidth: "xl",
+    maxWidth: "lg",
     style: {
       margin: '20px 20px 20px 20px auto'
     },

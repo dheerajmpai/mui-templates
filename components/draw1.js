@@ -14,17 +14,31 @@ import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
 import Link from 'next/link';
 import Typography from '@material-ui/core/Typography';
-import {COMPANY_NAME} from '../constants';
+import {COMPANY_NAME, FONT_1} from '../constants';
 // import {sections as sec} from './nav2';
 
-const sec = [{ 'title': 'Nation', 'url': '/nation' },
-{ 'title': 'World', 'url': '/world' },
-{ 'title': 'Politics', 'url': '/politics' },
-{ 'title': 'Bussiness', 'url': '/biz' },
-{ 'title': 'Sports', 'url': '/sports' },
-{ 'title': 'Trending', 'url': '/trending' },
-{ 'title': 'Jobs', 'url': '/jobs' },
-{ 'title': 'About Us', 'url': 'https://news.tess.now.sh/about' },
+// const sec = [{ 'title': 'Nation', 'url': '/nation' },
+// { 'title': 'World', 'url': '/world' },
+// { 'title': 'Politics', 'url': '/politics' },
+// { 'title': 'Bussiness', 'url': '/biz' },
+// { 'title': 'Sports', 'url': '/sports' },
+// { 'title': 'Trending', 'url': '/trending' },
+// { 'title': 'Jobs', 'url': '/jobs' },
+// { 'title': 'About Us', 'url': 'https://news.tess.now.sh/about' },
+
+// ]
+
+const sec = [
+  { 'title': 'Services', 'url': '/nation' },
+  { 'title': 'Research', 'url': '/politics' },
+  { 'title': 'Advertise', 'url': '/grow' },
+  { 'title': 'Build', 'url': '/build' },
+  { 'title': 'Resources', 'url': '/resources' },
+  { 'title': 'Partner with Us', 'url': '/partners' },
+  { 'title': 'Internships', 'url': '/intern' },
+  { 'title': 'Jobs', 'url': '/jobs' },
+  { 'title': 'About Us', 'url': '/about' },
+  { 'title': 'Contact Us', 'url': '/contact' },
 
 ]
 
@@ -122,6 +136,7 @@ export default function MobileDrawer() {
             height='80px'
             noWrap
             className={classes.toolbarTitle}
+            style={{fontFamily:FONT_1}}
           >
             {title}
           </Typography>
