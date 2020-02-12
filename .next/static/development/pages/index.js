@@ -1093,37 +1093,52 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["ma
 }); //  const { sections, title } = props;
 
 var sections = [{
-  'title': 'Nation',
+  'title': 'Services',
   'url': '/nation'
 }, {
-  'title': 'World',
-  'url': '/world'
-}, {
-  'title': 'Politics',
+  'title': 'Research',
   'url': '/politics'
 }, {
-  'title': 'Bussiness',
-  'url': '/biz'
+  'title': 'Advertise',
+  'url': '/grow'
 }, {
-  'title': 'Sports',
-  'url': '/sports'
+  'title': 'Build',
+  'url': '/build'
 }, {
-  'title': 'Trending',
-  'url': '/trending'
+  'title': 'Resources',
+  'url': '/resources'
+}, {
+  'title': 'Partner with Us',
+  'url': '/partners'
+}, {
+  'title': 'Internships',
+  'url': '/intern'
 }, {
   'title': 'Jobs',
   'url': '/jobs'
 }, {
   'title': 'About Us',
-  'url': 'https://news.tess.now.sh/about'
-}];
+  'url': '/about'
+}, {
+  'title': 'Contact Us',
+  'url': '/contact'
+}]; // const sections = [{ 'title': 'Nation', 'url': '/nation' },
+// { 'title': 'World', 'url': '/world' },
+// { 'title': 'Politics', 'url': '/politics' },
+// { 'title': 'Bussiness', 'url': '/biz' },
+// { 'title': 'Sports', 'url': '/sports' },
+// { 'title': 'Trending', 'url': '/trending' },
+// { 'title': 'Jobs', 'url': '/jobs' },
+// { 'title': 'About Us', 'url': 'https://news.tess.now.sh/about' },
+// ]
+
 var title = _constants__WEBPACK_IMPORTED_MODULE_11__["COMPANY_NAME"];
 var DesktopHeader1 = function DesktopHeader1() {
   var classes = useStyles();
   return __jsx("nav", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 64
     },
     __self: this
   }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1135,7 +1150,7 @@ var DesktopHeader1 = function DesktopHeader1() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 65
     },
     __self: this
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1144,7 +1159,7 @@ var DesktopHeader1 = function DesktopHeader1() {
     className: classes.toolbarSecondary,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 66
     },
     __self: this
   }, sections.map(function (section) {
@@ -1152,7 +1167,7 @@ var DesktopHeader1 = function DesktopHeader1() {
       href: section.url,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 68
       },
       __self: this
     }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -1162,7 +1177,7 @@ var DesktopHeader1 = function DesktopHeader1() {
       variant: "text",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 70
       },
       __self: this
     }, __jsx("mLink", {
@@ -1177,7 +1192,7 @@ var DesktopHeader1 = function DesktopHeader1() {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 71
       },
       __self: this
     }, section.title)));
@@ -1188,7 +1203,20 @@ var DesktopHeader2 = function DesktopHeader2() {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 97
+    },
+    __self: this
+  }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    position: "static",
+    style: {
+      background: '#FFFFFF',
+      height: '80px',
+      color: 'red',
+      boxShadow: '0 3px 5px #FFFFFF'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
     },
     __self: this
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1199,7 +1227,7 @@ var DesktopHeader2 = function DesktopHeader2() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 99
     },
     __self: this
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -1214,10 +1242,10 @@ var DesktopHeader2 = function DesktopHeader2() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 101
     },
     __self: this
-  }, title)));
+  }, title))));
 }; // DesktopHeader.propTypes = {
 //   sections: PropTypes.array,
 //   title: PropTypes.string,
@@ -33648,9 +33676,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_comps__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/comps */ "./components/comps.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_comps__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/comps */ "./components/comps.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/pages/grid1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
 
 
 
@@ -33713,7 +33744,7 @@ function GridPage() {
     src: "/brand2.jpeg",
     style: {
       borderRadius: '1px',
-      width: '60%',
+      width: '90%',
       margin: '2px auto'
     },
     __source: {
@@ -33742,13 +33773,13 @@ function GridPage() {
       lineNumber: 26
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Title3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Title3"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }, "BUILD YOUR BRAND")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+  }, "BUILD YOUR BRAND")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
@@ -33761,13 +33792,20 @@ function GridPage() {
       lineNumber: 29
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }, "Build your brand by advertising on the Hyperweb Ad Network. Publish your ads on The South Asian Express, Awakened Indian and Hyperweb AI. ")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+  }, "Build your brand by advertising on the Hyperweb Ad Network. Publish your ads on The South Asian Express, Awakened Indian and Hyperweb AI. ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/grow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Read More"))), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
@@ -33781,13 +33819,13 @@ function GridPage() {
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "blue",
+    color: "primary",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
@@ -33831,7 +33869,7 @@ function GridPage() {
       lineNumber: 40
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Title3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Title3"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
@@ -33844,13 +33882,20 @@ function GridPage() {
       lineNumber: 42
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
     },
     __self: this
-  }, "Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation website technologies.")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+  }, "Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation web-dev technologies. ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/build",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, "Read More"))), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
@@ -33864,13 +33909,13 @@ function GridPage() {
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "blue",
+    color: "primary",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
@@ -33899,7 +33944,7 @@ function GridPage() {
     src: "/speed1.jpeg",
     style: {
       borderRadius: '1px',
-      width: '60%',
+      width: '90%',
       margin: '2px auto'
     },
     __source: {
@@ -33944,10 +33989,10 @@ function GridPage() {
     },
     __self: this
   }, __jsx("img", {
-    src: "/brand2.jpeg",
+    src: "/it.jpg",
     style: {
       borderRadius: '1px',
-      width: '60%',
+      width: '90%',
       margin: '2px auto'
     },
     __source: {
@@ -33973,66 +34018,73 @@ function GridPage() {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 65
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Title3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Title3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }, "CONTRIBUTE TO OPENSOURCE SOFTWARES")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 66
     },
     __self: this
-  }, "BUILD YOUR BRAND")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    elevation: 0,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
     },
     __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, " Work on Open-source softwares that are used by thousands of users worldwide. Intern at Hyperweb AI. Learn, Build, contribute and have fun building latest and the best technology that change the world. ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/opensource",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, "Read More"), " ")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
   }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
-    },
-    __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, "Build your brand by advertising on the Hyperweb Ad Network. Publish your ads on The South Asian Express, Awakened Indian and Hyperweb AI. ")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    elevation: 0,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "blue",
+    color: "primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 69
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 69
     },
     __self: this
-  }, "Claim your $200 ad credits now!")))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  }, "Claim your $200 ad credits now!")))), "=", __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
     item: true,
     xs: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 73
     },
     __self: this
   }, __jsx("div", {
@@ -34041,7 +34093,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 73
     },
     __self: this
   }, " ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
@@ -34055,68 +34107,98 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 75
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 76
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Title3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Title3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 76
     },
     __self: this
-  }, "GROW YOUR ONLINE PRESENCE")), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "JOIN THE COMMUNITY")), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 78
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 78
     },
     __self: this
-  }, "Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation website technologies.")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+  }, "Join the Hyperweb AI community in developing impactful technologies that change the world.", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/slack",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 78
+    },
+    __self: this
+  }, "Read More")), "  "), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
     },
     __self: this
   }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 80
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "blue",
+    color: "primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 80
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 80
     },
     __self: this
-  }, "Start Building your website for FREE!")))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  }, " Join the Slack group Now!"))), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    elevation: 0,
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_7__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }, "Not on Slack? Join using ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/whatsapp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }, "Whatsapp!")), "  ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
     item: true,
     xs: 12,
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 86
     },
     __self: this
   }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -34126,19 +34208,19 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 87
     },
     __self: this
   }, __jsx("img", {
-    src: "/speed3.jpeg",
+    src: "/ai4all.jpg",
     style: {
       borderRadius: '1px',
-      width: '60%',
+      width: '100%',
       margin: '2px auto'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 87
     },
     __self: this
   }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
@@ -34146,7 +34228,7 @@ function GridPage() {
     xs: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 91
     },
     __self: this
   }, __jsx("div", {
@@ -34155,7 +34237,7 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 91
     },
     __self: this
   }, " "))));
