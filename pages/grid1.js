@@ -90,6 +90,10 @@ export default function GridPage() {
                 </Grid>
 
 
+                <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
+                {/* <Grid item xs={12}><Divider2/></Grid> */}
+
+
             </Grid>
             {/* </Container> */}
         </React.Fragment>

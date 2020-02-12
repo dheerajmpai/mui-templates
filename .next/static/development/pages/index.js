@@ -34135,7 +34135,24 @@ function GridPage() {
       lineNumber: 89
     },
     __self: this
-  })))));
+  }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0__["default"], {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, __jsx("div", {
+    style: {
+      margin: '50px 0px 50px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, " "))));
 }
 
 /***/ }),
