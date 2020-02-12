@@ -33456,9 +33456,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Container */ "./node_modules/@material-ui/core/esm/Container/index.js");
 /* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Box */ "./node_modules/@material-ui/core/esm/Box/index.js");
+/* harmony import */ var _components_comps__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/comps */ "./components/comps.js");
 
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/pages/footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -33659,17 +33661,40 @@ function Footer() {
         __self: this
       }, item.title));
     })));
-  })), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    mt: 5,
+  })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    item: true,
+    xs: 12,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 133
     },
     __self: this
-  }, __jsx(Copyright, {
+  }, __jsx("div", {
+    style: {
+      margin: '50px 0px 50px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: this
+  }, " ")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_9__["Divider2"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    mt: 5,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: this
+  }, __jsx(Copyright, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
     },
     __self: this
   }))));

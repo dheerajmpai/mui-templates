@@ -6,7 +6,7 @@ import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-
+import { Divider2 } from '../components/comps';
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -130,6 +130,8 @@ export default function Footer() {
             </Grid>
           ))}
         </Grid>
+        <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
+        <Divider2 />
         <Box mt={5}>
           <Copyright />
         </Box>
