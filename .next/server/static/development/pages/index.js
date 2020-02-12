@@ -97,33 +97,47 @@ module.exports =
 /*!*****************************!*\
   !*** ./components/comps.js ***!
   \*****************************/
-/*! exports provided: Para1, Para2, Title1, Title2, Title4, Image1, featuredImage1 */
+/*! exports provided: Para1, Para2, Para3, Title1, Title2, Title3, Title4, Image1, featuredImage1, Divider2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Para1", function() { return Para1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Para2", function() { return Para2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Para3", function() { return Para3; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title1", function() { return Title1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title2", function() { return Title2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title3", function() { return Title3; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title4", function() { return Title4; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Image1", function() { return Image1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "featuredImage1", function() { return featuredImage1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Divider2", function() { return Divider2; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Divider */ "@material-ui/core/Divider");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/comps.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
-const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createMuiTheme"])(); // style={{ width: '100%', textAlign: 'center', margin: '20px auto', fontFamily: fontFamily1 }}
+
+
+
+const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["createMuiTheme"])(); // style={{ width: '100%', textAlign: 'center', margin: '20px auto', fontFamily: fontFamily1 }}
 
 const Para1 = para => {
   const textFontSize = '20px';
@@ -133,14 +147,12 @@ const Para1 = para => {
     variant: "body1",
     style: {
       textAlign: 'justify',
-      '@media (min-width:1000px)': {
-        fontSize: '1px'
-      },
+      fontSize: textFontSize,
       fontFamily: fontFamily1
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 16
     },
     __self: undefined
   }, para.children);
@@ -158,7 +170,26 @@ const Para2 = para => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
+    },
+    __self: undefined
+  }, para.children);
+};
+const Para3 = para => {
+  const textFontSize = '20px';
+  const fontFamily1 = _constants__WEBPACK_IMPORTED_MODULE_4__["FONT_3"];
+  const fontFamily2 = '"Roboto", Times, sans-serif';
+  const stl = para.style;
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    variant: "body1",
+    style: _objectSpread({}, stl, {
+      textAlign: 'justify',
+      fontSize: textFontSize,
+      fontFamily: fontFamily1
+    }),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
     },
     __self: undefined
   }, para.children);
@@ -174,7 +205,7 @@ const Title1 = title => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 37
     },
     __self: undefined
   }, " ", title.children, " ");
@@ -192,7 +223,25 @@ const Title2 = para => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 44
+    },
+    __self: undefined
+  }, para.children);
+};
+const Title3 = para => {
+  const textFontSize = '40px';
+  const fontFamily1 = '"Helvatica", Times, sans-serif';
+  const fontFamily2 = _constants__WEBPACK_IMPORTED_MODULE_4__["FONT_2"];
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    variant: "body1",
+    style: {
+      textAlign: 'justify',
+      fontSize: textFontSize,
+      fontFamily: fontFamily2
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
     },
     __self: undefined
   }, para.children);
@@ -209,7 +258,7 @@ const Title4 = title => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 58
     },
     __self: undefined
   }, " ", title.children, " ");
@@ -222,7 +271,7 @@ const Image1 = src => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 64
     },
     __self: undefined
   }, __jsx("img", _extends({}, src, {
@@ -234,7 +283,7 @@ const Image1 = src => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 64
     },
     __self: undefined
   })));
@@ -247,7 +296,7 @@ const featuredImage1 = src => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 70
     },
     __self: undefined
   }, __jsx("img", {
@@ -259,10 +308,23 @@ const featuredImage1 = src => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 70
     },
     __self: undefined
   }));
+};
+const Divider2 = props => {
+  const mar = props.mar;
+  return __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    style: {
+      margin: mar ? mar : '20px 0px 20px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: undefined
+  });
 };
 
 /***/ }),
@@ -592,9 +654,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/heads.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 const Heads = () => {
   var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
@@ -603,23 +667,23 @@ const Heads = () => {
   return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
-  }, "Bong Bong"), __jsx("div", {
+  }, _constants__WEBPACK_IMPORTED_MODULE_2__["COMPANY_NAME"]), __jsx("div", {
     className: "content",
     dangerouslySetInnerHTML: {
       __html: thisIsMyCopy2
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: undefined
   }), __jsx("div", {
@@ -629,7 +693,7 @@ const Heads = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: undefined
   }));
@@ -968,10 +1032,16 @@ function Header() {
       lineNumber: 51
     },
     __self: this
-  }, __jsx(_heads__WEBPACK_IMPORTED_MODULE_15__["Heads"], {
+  }, __jsx("style", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 52
+    },
+    __self: this
+  }, "@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');"), __jsx(_heads__WEBPACK_IMPORTED_MODULE_15__["Heads"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
     },
     __self: this
   }), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13___default.a, {
@@ -979,13 +1049,13 @@ function Header() {
     implementation: "css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 59
     },
     __self: this
   }, __jsx(_nav3__WEBPACK_IMPORTED_MODULE_14__["DesktopHeader2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 62
     },
     __self: this
   })), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13___default.a, {
@@ -993,13 +1063,13 @@ function Header() {
     implementation: "js",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 65
     },
     __self: this
   }, __jsx(_nav3__WEBPACK_IMPORTED_MODULE_14__["DesktopHeader1"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 67
     },
     __self: this
   })), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13___default.a, {
@@ -1007,13 +1077,13 @@ function Header() {
     implementation: "css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 71
     },
     __self: this
   }, __jsx(_draw1__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 73
     },
     __self: this
   })));
@@ -1130,7 +1200,7 @@ const DesktopHeader1 = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: undefined
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1139,14 +1209,14 @@ const DesktopHeader1 = () => {
     className: classes.toolbarSecondary,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: undefined
   }, sections.map(section => __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
     href: section.url,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: undefined
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1156,7 +1226,7 @@ const DesktopHeader1 = () => {
     variant: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: undefined
   }, __jsx("mLink", {
@@ -1166,9 +1236,12 @@ const DesktopHeader1 = () => {
     variant: "body2",
     href: section.url,
     className: classes.toolbarLink,
+    style: {
+      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_11__["FONT_2"]
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: undefined
   }, section.title))))));
@@ -1178,20 +1251,7 @@ const DesktopHeader2 = () => {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: undefined
-  }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    position: "static",
-    style: {
-      background: '#FFFFFF',
-      height: '80px',
-      color: 'red',
-      boxShadow: '0 3px 5px #FFFFFF'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 81
     },
     __self: undefined
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1202,63 +1262,25 @@ const DesktopHeader2 = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 83
     },
     __self: undefined
-  }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    size: "small",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81
-    },
-    __self: undefined
-  }, " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
-    href: "/signup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81
-    },
-    __self: undefined
-  }, "  Subscribe")), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
+  }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
     component: "h2",
     variant: "h3",
     color: "inherit",
     align: "center",
     noWrap: true,
     className: classes.toolbarTitle,
+    style: {
+      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_11__["FONT_1"]
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 85
     },
     __self: undefined
-  }, title), __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 92
-    },
-    __self: undefined
-  }, __jsx(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93
-    },
-    __self: undefined
-  })), __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    variant: "outlined",
-    size: "small",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
-    href: "/signup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: undefined
-  }, "Sign up")))));
+  }, title)));
 }; // DesktopHeader.propTypes = {
 //   sections: PropTypes.array,
 //   title: PropTypes.string,
@@ -2884,12 +2906,13 @@ const drawerConstants = {
 /*!***************************************!*\
   !*** ./constants/global.constants.js ***!
   \***************************************/
-/*! exports provided: COMPANY_NAME, WEBSITE_URL, BACKEND_URL, SUPPORT_EMAIL, COLOR_1, COLOR_2, COLOR_3, COLOR_4 */
+/*! exports provided: COMPANY_NAME, COMPANY_NAME_SMALL, WEBSITE_URL, BACKEND_URL, SUPPORT_EMAIL, COLOR_1, COLOR_2, COLOR_3, COLOR_4, FONT_1, FONT_2, FONT_3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COMPANY_NAME", function() { return COMPANY_NAME; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COMPANY_NAME_SMALL", function() { return COMPANY_NAME_SMALL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WEBSITE_URL", function() { return WEBSITE_URL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BACKEND_URL", function() { return BACKEND_URL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SUPPORT_EMAIL", function() { return SUPPORT_EMAIL; });
@@ -2897,7 +2920,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLOR_2", function() { return COLOR_2; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLOR_3", function() { return COLOR_3; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLOR_4", function() { return COLOR_4; });
-const COMPANY_NAME = "Hyperweb AI";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FONT_1", function() { return FONT_1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FONT_2", function() { return FONT_2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FONT_3", function() { return FONT_3; });
+const COMPANY_NAME = "HYPERWEB AI";
+const COMPANY_NAME_SMALL = "Hyperweb AI";
 const WEBSITE_URL = "https://hyperweb.ai";
 const BACKEND_URL = "https://api.hyperweb.ai/v1/";
 const SUPPORT_EMAIL = "editor@sae.news";
@@ -2905,6 +2932,9 @@ const COLOR_1 = '#142850';
 const COLOR_2 = '#27496d';
 const COLOR_3 = '#0c7b93';
 const COLOR_4 = '#00a8cc';
+const FONT_1 = "'Anton', sans-serif";
+const FONT_2 = "'Fjalla One', sans-serif";
+const FONT_3 = "'Patua One', cursive";
 
 /***/ }),
 
@@ -2939,13 +2969,15 @@ const STARTUP_ICON = '/static/icons/reocket.png';
 /*!****************************!*\
   !*** ./constants/index.js ***!
   \****************************/
-/*! exports provided: COMPANY_NAME, WEBSITE_URL, BACKEND_URL, SUPPORT_EMAIL, COLOR_1, COLOR_2, COLOR_3, COLOR_4, userConstants, alertConstants, dialogConstants, drawerConstants, countryCodeOptions, MonthNames, NumberRegex, orgConstants, productConstants, mentorConstants, LOGO, LOGO_SMALL, ErrorIcon, NOT_FOUND_ICON, VERIFY_EMAIL_ICON, MENTOR_ICON, STARTUP_ICON, registerOrgConstants, majorCategoryChoices */
+/*! exports provided: COMPANY_NAME, COMPANY_NAME_SMALL, WEBSITE_URL, BACKEND_URL, SUPPORT_EMAIL, COLOR_1, COLOR_2, COLOR_3, COLOR_4, FONT_1, FONT_2, FONT_3, userConstants, alertConstants, dialogConstants, drawerConstants, countryCodeOptions, MonthNames, NumberRegex, orgConstants, productConstants, mentorConstants, LOGO, LOGO_SMALL, ErrorIcon, NOT_FOUND_ICON, VERIFY_EMAIL_ICON, MENTOR_ICON, STARTUP_ICON, registerOrgConstants, majorCategoryChoices */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _global_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./global.constants */ "./constants/global.constants.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "COMPANY_NAME", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["COMPANY_NAME"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "COMPANY_NAME_SMALL", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["COMPANY_NAME_SMALL"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "WEBSITE_URL", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["WEBSITE_URL"]; });
 
@@ -2960,6 +2992,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "COLOR_3", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["COLOR_3"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "COLOR_4", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["COLOR_4"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FONT_1", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["FONT_1"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FONT_2", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["FONT_2"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FONT_3", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["FONT_3"]; });
 
 /* harmony import */ var _user_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user.constants */ "./constants/user.constants.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "userConstants", function() { return _user_constants__WEBPACK_IMPORTED_MODULE_1__["userConstants"]; });
@@ -4878,6 +4916,247 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
+/***/ "./pages/footer.js":
+/*!*************************!*\
+  !*** ./pages/footer.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "@material-ui/core/CssBaseline");
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Link */ "@material-ui/core/Link");
+/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Container */ "@material-ui/core/Container");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Box */ "@material-ui/core/Box");
+/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_7__);
+var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/pages/footer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+function Copyright() {
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    variant: "body2",
+    color: "textSecondary",
+    align: "center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, 'Copyright © ', __jsx(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    color: "inherit",
+    href: "https://hyperweb.ai",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "Hyperweb Media Private Limited"), ' ', new Date().getFullYear(), '.');
+}
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(theme => ({
+  '@global': {
+    ul: {
+      margin: 0,
+      padding: 0,
+      listStyle: 'none'
+    }
+  },
+  appBar: {
+    borderBottom: `1px solid ${theme.palette.divider}`
+  },
+  toolbar: {
+    flexWrap: 'wrap'
+  },
+  toolbarTitle: {
+    flexGrow: 1
+  },
+  link: {
+    margin: theme.spacing(1, 1.5)
+  },
+  heroContent: {
+    padding: theme.spacing(8, 0, 6)
+  },
+  cardHeader: {
+    backgroundColor: theme.palette.type === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200]
+  },
+  cardPricing: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'baseline',
+    marginBottom: theme.spacing(2)
+  },
+  footer: {
+    borderTop: `1px solid ${theme.palette.divider}`,
+    marginTop: theme.spacing(8),
+    paddingTop: theme.spacing(3),
+    paddingBottom: theme.spacing(3),
+    [theme.breakpoints.up('sm')]: {
+      paddingTop: theme.spacing(6),
+      paddingBottom: theme.spacing(6)
+    }
+  }
+}));
+const footers = [{
+  title: 'Company',
+  description: [{
+    'title': 'Team',
+    'url': '/team'
+  }, {
+    'title': 'History',
+    'url': '/history'
+  }, {
+    'title': 'Contact Us',
+    'url': '/contactus'
+  }, {
+    'title': 'Locations',
+    'url': '/locations'
+  }]
+}, {
+  title: 'Features',
+  description: [{
+    'title': 'Latest Updates',
+    'url': '/team'
+  }, {
+    'title': 'Random feature',
+    'url': '/history'
+  }, {
+    'title': 'Team feature',
+    'url': '/contactus'
+  }, {
+    'title': 'Developers',
+    'url': '/locations'
+  }]
+}, {
+  title: 'Resources',
+  description: [{
+    'title': 'Resource',
+    'url': '/team'
+  }, {
+    'title': 'Resource name',
+    'url': '/history'
+  }, {
+    'title': 'Another resource',
+    'url': '/contactus'
+  }, {
+    'title': 'Final resource',
+    'url': '/locations'
+  }]
+}, {
+  title: 'Legal',
+  description: [{
+    'title': 'Privacy policy',
+    'url': '/privacy'
+  }, {
+    'title': 'Terms of use',
+    'url': '/terms'
+  }]
+}];
+function Footer() {
+  const classes = useStyles();
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    maxWidth: "md",
+    component: "footer",
+    className: classes.footer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    container: true,
+    spacing: 4,
+    justify: "space-evenly",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: this
+  }, footers.map(footer => __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    item: true,
+    xs: 6,
+    sm: 3,
+    key: footer.title,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    variant: "h6",
+    color: "textPrimary",
+    gutterBottom: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: this
+  }, footer.title), __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121
+    },
+    __self: this
+  }, footer.description.map(item => __jsx("li", {
+    key: item.title,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    href: item.url,
+    variant: "subtitle1",
+    color: "textSecondary",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: this
+  }, item.title))))))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    mt: 5,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: this
+  }, __jsx(Copyright, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: this
+  }))));
+}
+
+/***/ }),
+
 /***/ "./pages/grid1.js":
 /*!************************!*\
   !*** ./pages/grid1.js ***!
@@ -4894,13 +5173,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Container */ "@material-ui/core/Container");
 /* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_comps__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/comps */ "./components/comps.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_comps__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/comps */ "./components/comps.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/pages/grid1.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
 
 
 
@@ -4908,10 +5190,10 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 
 function GridPage() {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     },
     __self: this
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -4919,30 +5201,47 @@ function GridPage() {
     spacing: 1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("div", {
+    style: {
+      margin: '50px 0px 50px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, " ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 19
     },
     __self: this
-  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     style: {
       textAlign: 'center'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 20
     },
     __self: this
   }, __jsx("img", {
-    src: "/brand1.jpeg",
+    src: "/brand2.jpeg",
     style: {
       borderRadius: '1px',
       width: '60%',
@@ -4950,74 +5249,185 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 20
     },
     __self: this
   }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     sm: 6,
+    style: {
+      textAlign: 'center',
+      verticalAlign: 'middle',
+      lineHeight: '100%'
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 23
     },
     __self: this
-  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 26
     },
     __self: this
-  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_5__["Para1"], {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Title3"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 26
     },
     __self: this
-  }, "Build your brand by advertising on the Hyperweb Ad Network. Publish your ads on The South Asian Express, Awakened Indian and Hyperweb AI. Claim your $200 ad credits now! "))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "BUILD YOUR BRAND")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 27
     },
     __self: this
-  }), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Build your brand by advertising on the Hyperweb Ad Network. Publish your ads on The South Asian Express, Awakened Indian and Hyperweb AI. ")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    color: "blue",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Claim your $200 ad credits now!")))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, __jsx("div", {
+    style: {
+      margin: '50px 0px 50px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, " ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     sm: 5,
+    style: {
+      textAlign: 'center',
+      verticalAlign: 'middle',
+      lineHeight: '100%'
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 39
     },
     __self: this
-  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 40
     },
     __self: this
-  }, "Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation website technologies.")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Title3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, "GROW YOUR ONLINE PRESENCE")), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, "Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation website technologies.")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    color: "blue",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "Start Building your website for FREE!")))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     sm: 7,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 50
     },
     __self: this
-  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
     elevation: 0,
     style: {
       textAlign: 'center'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 51
     },
     __self: this
   }, __jsx("img", {
-    src: "/speed2.jpeg",
+    src: "/speed1.jpeg",
     style: {
       borderRadius: '1px',
       width: '60%',
@@ -5025,7 +5435,241 @@ function GridPage() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 51
+    },
+    __self: this
+  }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, __jsx("div", {
+    style: {
+      margin: '50px 0px 50px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, " ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    sm: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "/brand2.jpeg",
+    style: {
+      borderRadius: '1px',
+      width: '60%',
+      margin: '2px auto'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    sm: 6,
+    style: {
+      textAlign: 'center',
+      verticalAlign: 'middle',
+      lineHeight: '100%'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Title3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }, "BUILD YOUR BRAND")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, "Build your brand by advertising on the Hyperweb Ad Network. Publish your ads on The South Asian Express, Awakened Indian and Hyperweb AI. ")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    color: "blue",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "Claim your $200 ad credits now!")))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, __jsx("div", {
+    style: {
+      margin: '50px 0px 50px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, " ")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    sm: 5,
+    style: {
+      textAlign: 'center',
+      verticalAlign: 'middle',
+      lineHeight: '100%'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Title3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }, "GROW YOUR ONLINE PRESENCE")), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  }, "Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation website technologies.")), __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Divider2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    color: "blue",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }, __jsx(_components_comps__WEBPACK_IMPORTED_MODULE_6__["Para3"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }, "Start Building your website for FREE!")))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    item: true,
+    xs: 12,
+    sm: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    elevation: 0,
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "/speed3.jpeg",
+    style: {
+      borderRadius: '1px',
+      width: '60%',
+      margin: '2px auto'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
     },
     __self: this
   })))));
@@ -5049,9 +5693,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_nav2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/nav2 */ "./components/nav2.js");
 /* harmony import */ var _grid1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./grid1 */ "./pages/grid1.js");
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ "./pages/footer.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -5068,20 +5714,14 @@ function App() {
   var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
   var thisIsMyCopy2 = '<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-127071484-15"></script>';
   var thisIsMyCopy3 = "<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-127071484-15');</script>";
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("style", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');"), __jsx("div", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
     className: "content",
     dangerouslySetInnerHTML: {
       __html: thisIsMyCopy2
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 21
     },
     __self: this
   }), __jsx("div", {
@@ -5091,7 +5731,7 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 22
     },
     __self: this
   }), __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -5100,28 +5740,25 @@ function App() {
     },
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 25
-    },
-    __self: this
-  }, __jsx("div", {
-    style: {
-      fontFamily: "'Anton', sans-serif"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, "Hello Anton here"), __jsx(_components_nav2__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
     },
     __self: this
   }), __jsx(_grid1__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 27
+    },
+    __self: this
+  }), __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
     },
     __self: this
   })));
@@ -5152,6 +5789,17 @@ module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
 
+/***/ "@material-ui/core/Box":
+/*!****************************************!*\
+  !*** external "@material-ui/core/Box" ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Box");
+
+/***/ }),
+
 /***/ "@material-ui/core/Button":
 /*!*******************************************!*\
   !*** external "@material-ui/core/Button" ***!
@@ -5171,6 +5819,17 @@ module.exports = require("@material-ui/core/Button");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Container");
+
+/***/ }),
+
+/***/ "@material-ui/core/CssBaseline":
+/*!************************************************!*\
+  !*** external "@material-ui/core/CssBaseline" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CssBaseline");
 
 /***/ }),
 

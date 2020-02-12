@@ -9,7 +9,8 @@ import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import { Link as mLink } from '@material-ui/core/Link';
 import Link from 'next/link'
-import {COMPANY_NAME, COLOR_1} from '../constants';
+import {COMPANY_NAME, COLOR_1, FONT_1,FONT_2, FONT_3} from '../constants';
+
 
 const useStyles = makeStyles(theme => ({
   toolbar: {
@@ -59,6 +60,7 @@ export const DesktopHeader1 = () => {
               variant="body2"
               href={section.url}
               className={classes.toolbarLink}
+              style={{fontFamily:FONT_2}}
             > 
               {section.title}
               
@@ -68,7 +70,8 @@ export const DesktopHeader1 = () => {
         ))}
         {/*<Link href='/about'>Know about us</Link>*/}
       </Toolbar>
-    </AppBar>)
+    </AppBar>
+    )
 }
 
 
@@ -76,9 +79,9 @@ export const DesktopHeader2 = () => {
   const classes = useStyles();
   return (
     <React.Fragment >
-      <AppBar position='static' style={{ background: '#FFFFFF', height: '80px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
+      {/* <AppBar position='static' style={{ background: '#FFFFFF', height: '80px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >*/}
         <Toolbar className={classes.toolbar} style={{ height: '80px', color: 'red' }}>
-          <Button size="small"> <Link href='/signup'>  Subscribe</Link></Button>
+          {/* <Button size="small"> <Link href='/signup'>  Subscribe</Link></Button> */}
           <Typography
             component="h2"
             variant="h3"
@@ -86,17 +89,18 @@ export const DesktopHeader2 = () => {
             align="center"
             noWrap
             className={classes.toolbarTitle}
+            style={{fontFamily:FONT_1}}
           >
             {title}
           </Typography>
-          <IconButton>
+          {/* <IconButton>
             <SearchIcon />
-          </IconButton>
-          <Button variant="outlined" size="small">
+          </IconButton> */}
+          {/* <Button variant="outlined" size="small">
             <Link href='/signup'>Sign up</Link>
-          </Button>
+          </Button> */}
         </Toolbar>
-      </AppBar>
+      {/* </AppBar> */}
 
 
     </React.Fragment>

@@ -12,8 +12,8 @@ import Link from 'next/link'
 import DesktopHeader from './nav';
 import MobileDrawer from './draw1';
 import Hidden from '@material-ui/core/Hidden';
-import {DesktopHeader1, DesktopHeader2 } from './nav3';
-import {Heads} from './heads';
+import { DesktopHeader1, DesktopHeader2 } from './nav3';
+import { Heads } from './heads';
 
 const useStyles = makeStyles(theme => ({
   toolbar: {
@@ -49,10 +49,13 @@ export default function Header() {
   // const title = 'News Now'
   return (
     <React.Fragment >
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');
+      </style>
       {/* {mobOrDesktop} */}
       {/* <MobileDrawer/> */}
       {/* <DesktopHeader /> */}
-      <Heads/>
+      <Heads />
       <Hidden xsDown implementation="css">
 
         {/* <DesktopHeader1 /> */}
