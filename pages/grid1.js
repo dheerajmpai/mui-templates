@@ -66,7 +66,7 @@ export default function GridPage() {
                     <Divider2 />
                     <Paper elevation={0} ><Para3> Work on Open-source softwares that are used by thousands of users worldwide. Intern at Hyperweb AI. Learn, Build, contribute and have fun building latest and the best technology that change the world. <Link href='/opensource'>Read More</Link> </Para3></Paper>
                     <Divider2 />
-                    <Paper elevation={0} ><Button color='primary'><Para3>Claim your $200 ad credits now!</Para3></Button></Paper>
+                    <Paper elevation={0} ><Link href='/intern'><Button color='primary'><Para3>Apply for Internship!</Para3></Button></Link></Paper>
 
                 </Grid>
 =

@@ -5603,6 +5603,13 @@ function GridPage() {
       lineNumber: 69
     },
     __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/intern",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
     color: "primary",
     __source: {
@@ -5616,7 +5623,7 @@ function GridPage() {
       lineNumber: 69
     },
     __self: this
-  }, "Claim your $200 ad credits now!")))), "=", __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "Apply for Internship!"))))), "=", __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_0___default.a, {
     item: true,
     xs: 12,
     __source: {
