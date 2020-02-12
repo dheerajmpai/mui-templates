@@ -14,6 +14,7 @@ import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
+import {FONT_1,FONT_2,FONT_3} from '../constants';
 
 function Copyright() {
   return (
@@ -135,7 +136,7 @@ export default function Pricing() {
      
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
-        <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+        <Typography style={{}} component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
           Pricing
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
