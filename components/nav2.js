@@ -56,7 +56,7 @@ export default function Header() {
       {/* <MobileDrawer/> */}
       {/* <DesktopHeader /> */}
       <Heads />
-      <Hidden xsDown implementation="css">
+      <Hidden xsDown implementation="js">
 
         {/* <DesktopHeader1 /> */}
         <DesktopHeader2 />
@@ -68,7 +68,7 @@ export default function Header() {
         {/* <DesktopHeader2 /> */}
       </Hidden >
 
-      <Hidden smUp implementation="css">
+      <Hidden smUp implementation="js">
 
         <MobileDrawer />
       </Hidden>

@@ -1046,7 +1046,7 @@ function Header() {
     __self: this
   }), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13___default.a, {
     xsDown: true,
-    implementation: "css",
+    implementation: "js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
@@ -1074,7 +1074,7 @@ function Header() {
     __self: this
   })), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13___default.a, {
     smUp: true,
-    implementation: "css",
+    implementation: "js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 71
@@ -1191,7 +1191,13 @@ const sections = [{
 const title = _constants__WEBPACK_IMPORTED_MODULE_11__["COMPANY_NAME"];
 const DesktopHeader1 = () => {
   const classes = useStyles();
-  return __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  return __jsx("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
     position: "sticky",
     style: {
       boxShadow: '0 8px 6px -6px #AAAAAA',
@@ -1200,7 +1206,7 @@ const DesktopHeader1 = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: undefined
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1209,14 +1215,14 @@ const DesktopHeader1 = () => {
     className: classes.toolbarSecondary,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: undefined
   }, sections.map(section => __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
     href: section.url,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: undefined
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1226,7 +1232,7 @@ const DesktopHeader1 = () => {
     variant: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: undefined
   }, __jsx("mLink", {
@@ -1241,17 +1247,17 @@ const DesktopHeader1 = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 57
     },
     __self: undefined
-  }, section.title))))));
+  }, section.title)))))));
 };
 const DesktopHeader2 = () => {
   const classes = useStyles();
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1262,7 +1268,7 @@ const DesktopHeader2 = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 85
     },
     __self: undefined
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -1277,7 +1283,7 @@ const DesktopHeader2 = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 87
     },
     __self: undefined
   }, title)));
@@ -5752,6 +5758,7 @@ function App() {
     },
     __self: this
   }), __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    maxWidth: "xl",
     style: {
       margin: '20px 20px 20px 20px auto'
     },

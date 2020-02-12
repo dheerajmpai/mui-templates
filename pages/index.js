@@ -20,7 +20,7 @@ export default function App() {
 
         <div className="content"  dangerouslySetInnerHTML={{ __html: thisIsMyCopy2 }}></div>
         <div className="content" dangerouslySetInnerHTML={{ __html: thisIsMyCopy3 }}></div>
-        <Container style={{ margin: '20px 20px 20px 20px auto' }}>
+        <Container maxWidth='xl' style={{ margin: '20px 20px 20px 20px auto' }}>
 
             <Header />
 
