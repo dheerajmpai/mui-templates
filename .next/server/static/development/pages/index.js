@@ -594,7 +594,7 @@ function MobileDrawer() {
     },
     __self: this
   }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    position: "static",
+    position: "fixed",
     style: {
       background: _constants__WEBPACK_IMPORTED_MODULE_16__["COLOR_1"],
       height: '60px',

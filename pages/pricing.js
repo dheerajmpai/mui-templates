@@ -4,6 +4,7 @@ import Header from '../components/nav2';
 import GridPage from './grid1';
 import Footer from './footer';
 import PricingTable from './pricingtable';
+import {Divider2} from '../components/comps';
 {/* <style>
 @import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');
 </style> 
@@ -24,6 +25,7 @@ export default function App() {
     <Container maxWidth='lg' style={{ margin: '20px 20px 20px 20px auto' }}>
 
       <Header />
+      <Divider2/>
       <PricingTable />
       {/* <GridPage /> */}
       <Footer />

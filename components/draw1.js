@@ -125,7 +125,7 @@ export default function MobileDrawer() {
 
   return (
     <div>
-      <AppBar position='static' style={{ background: COLOR_1, height: '60px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
+      <AppBar position='fixed' style={{ background: COLOR_1, height: '60px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
         <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
           <Button onClick={toggleDrawer('left', true)}><MenuIcon style={{color:COLOR_5}} /></Button>
           <Typography
