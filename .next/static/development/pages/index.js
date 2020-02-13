@@ -39,6 +39,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Divider */ "./node_modules/@material-ui/core/esm/Divider/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
+/* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./themes */ "./components/themes.js");
 
 
 
@@ -59,7 +60,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_11__["createMuiTheme"])(); // style={{ width: '100%', textAlign: 'center', margin: '20px auto', fontFamily: fontFamily1 }}
+ // const theme = createMuiTheme();
+// style={{ width: '100%', textAlign: 'center', margin: '20px auto', fontFamily: fontFamily1 }}
 
 var Para1 = function Para1(para) {
   var textFontSize = '20px';
@@ -92,11 +94,12 @@ var Para2 = function Para2(para) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: this
   }, para.children);
-};
+}; // fontSize: textFontSize
+
 var Para3 = function Para3(para) {
   var textFontSize = '20px';
   var fontFamily1 = _constants__WEBPACK_IMPORTED_MODULE_12__["FONT_3"];
@@ -106,7 +109,6 @@ var Para3 = function Para3(para) {
     variant: "body1",
     style: _objectSpread({}, stl, {
       textAlign: 'justify',
-      fontSize: textFontSize,
       fontFamily: fontFamily1
     }),
     __source: {
@@ -155,15 +157,14 @@ var Title3 = function Title3(para) {
   var fontFamily1 = '"Helvatica", Times, sans-serif';
   var fontFamily2 = _constants__WEBPACK_IMPORTED_MODULE_12__["FONT_2"];
   return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    variant: "body1",
+    variant: "h4",
     style: {
-      textAlign: 'justify',
-      fontSize: textFontSize,
+      textAlign: 'center',
       fontFamily: fontFamily2
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, para.children);
@@ -180,7 +181,7 @@ var Title4 = function Title4(title) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   }, " ", title.children, " ");
@@ -193,7 +194,7 @@ var Image1 = function Image1(src) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: this
   }, __jsx("img", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_6__["default"])({}, src, {
@@ -205,7 +206,7 @@ var Image1 = function Image1(src) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: this
   })));
@@ -218,7 +219,7 @@ var featuredImage1 = function featuredImage1(src) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
   }, __jsx("img", {
@@ -230,7 +231,7 @@ var featuredImage1 = function featuredImage1(src) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
   }));
@@ -243,7 +244,7 @@ var Divider2 = function Divider2(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 78
     },
     __self: this
   });
@@ -523,10 +524,8 @@ function MobileDrawer() {
     })));
   };
 
-  var sections = [{
-    'title': 'Sign Up',
-    'url': '/signup'
-  }, {
+  var sections = [// { 'title': 'Sign Up', 'url': '/signup' },
+  {
     'title': 'Subscribe',
     'url': '/subscribe'
   }];
@@ -540,7 +539,7 @@ function MobileDrawer() {
   }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_21__["default"], {
     position: "static",
     style: {
-      background: '#FDDB3A',
+      background: _constants__WEBPACK_IMPORTED_MODULE_24__["COLOR_1"],
       height: '60px',
       color: 'red',
       boxShadow: '0 3px 5px #FFFFFF'
@@ -567,6 +566,9 @@ function MobileDrawer() {
     },
     __self: this
   }, __jsx(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_19___default.a, {
+    style: {
+      color: _constants__WEBPACK_IMPORTED_MODULE_24__["COLOR_5"]
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 130
@@ -581,7 +583,8 @@ function MobileDrawer() {
     noWrap: true,
     className: classes.toolbarTitle,
     style: {
-      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_24__["FONT_1"]
+      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_24__["FONT_1"],
+      color: _constants__WEBPACK_IMPORTED_MODULE_24__["COLOR_5"]
     },
     __source: {
       fileName: _jsxFileName,
@@ -662,242 +665,6 @@ var Heads = function Heads() {
 
 /***/ }),
 
-/***/ "./components/nav.js":
-/*!***************************!*\
-  !*** ./components/nav.js ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DesktopHeader; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "./node_modules/@material-ui/core/esm/Toolbar/index.js");
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/AppBar */ "./node_modules/@material-ui/core/esm/AppBar/index.js");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/esm/IconButton/index.js");
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js");
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
-/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Link */ "./node_modules/@material-ui/core/esm/Link/index.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
-var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/nav.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-
-
-
-
-
-
-
-var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(function (theme) {
-  return {
-    toolbar: {
-      borderBottom: "1px solid ".concat(theme.palette.divider)
-    },
-    toolbarTitle: {
-      flex: 1,
-      color: '#000AAA',
-      fontFamily: 'Comic-Sans'
-    },
-    toolbarSecondary: {
-      justifyContent: 'space-between',
-      overflowX: 'auto',
-      color: 'black'
-    },
-    toolbarLink: {
-      padding: theme.spacing(1),
-      flexShrink: 0
-    }
-  };
-});
-function DesktopHeader() {
-  var classes = useStyles(); //  const { sections, title } = props;
-
-  var sections = [{
-    'title': 'Nation',
-    'url': '/nation'
-  }, {
-    'title': 'World',
-    'url': '/world'
-  }, {
-    'title': 'Politics',
-    'url': '/politics'
-  }, {
-    'title': 'Bussiness',
-    'url': '/biz'
-  }, {
-    'title': 'Sports',
-    'url': '/sports'
-  }, {
-    'title': 'Trending',
-    'url': '/trending'
-  }, {
-    'title': 'Jobs',
-    'url': '/jobs'
-  }, {
-    'title': 'About Us',
-    'url': 'https://news.tess.now.sh/about'
-  }];
-  var title = 'News Now';
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    position: "static",
-    style: {
-      background: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_1"],
-      height: '120px',
-      color: 'red',
-      boxShadow: '0 3px 5px #FFFFFF'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: classes.toolbar,
-    style: {
-      height: '120px',
-      color: 'red'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    size: "small",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
-    href: "/signup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, "  Subscribe")), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    component: "h2",
-    variant: "h3",
-    color: "inherit",
-    align: "center",
-    noWrap: true,
-    className: classes.toolbarTitle,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }, title), __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, __jsx(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  })), __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    variant: "outlined",
-    size: "small",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
-    href: "/signup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }, "Sign up")))), __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    position: "sticky",
-    style: {
-      boxShadow: '0 8px 6px -6px #AAAAAA',
-      background: '#FFFFFF',
-      height: '42px'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    component: "nav",
-    variant: "dense",
-    className: classes.toolbarSecondary,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, sections.map(function (section) {
-    return __jsx("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 73
-      },
-      __self: this
-    }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      disableRipple: true,
-      fullWidth: true,
-      disableFocusRipple: true,
-      variant: "text",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 74
-      },
-      __self: this
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
-      color: "inherit",
-      noWrap: true,
-      key: section.title,
-      variant: "body2",
-      href: section.url // className={classes.toolbarLink}
-      ,
-      style: {
-        textDecoration: 'none'
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 75
-      },
-      __self: this
-    }, section.title)));
-  }))));
-}
-DesktopHeader.propTypes = {
-  sections: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array,
-  title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
-};
-
-/***/ }),
-
 /***/ "./components/nav2.js":
 /*!****************************!*\
   !*** ./components/nav2.js ***!
@@ -913,32 +680,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "./node_modules/@material-ui/core/esm/Toolbar/index.js");
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/AppBar */ "./node_modules/@material-ui/core/esm/AppBar/index.js");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/esm/IconButton/index.js");
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js");
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
-/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Link */ "./node_modules/@material-ui/core/esm/Link/index.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./nav */ "./components/nav.js");
-/* harmony import */ var _draw1__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./draw1 */ "./components/draw1.js");
-/* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/Hidden */ "./node_modules/@material-ui/core/esm/Hidden/index.js");
-/* harmony import */ var _nav3__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./nav3 */ "./components/nav3.js");
-/* harmony import */ var _heads__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./heads */ "./components/heads.js");
+/* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Hidden */ "./node_modules/@material-ui/core/esm/Hidden/index.js");
+/* harmony import */ var _draw1__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./draw1 */ "./components/draw1.js");
+/* harmony import */ var _nav3__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nav3 */ "./components/nav3.js");
+/* harmony import */ var _heads__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./heads */ "./components/heads.js");
+/* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./themes */ "./components/themes.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/nav2.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
-
-
-
-
-
-
+ // import Toolbar from '@material-ui/core/Toolbar';
+// import AppBar from '@material-ui/core/AppBar';
+// import Button from '@material-ui/core/Button';
+// import IconButton from '@material-ui/core/IconButton';
+// import SearchIcon from '@material-ui/icons/Search';
+// import Typography from '@material-ui/core/Typography';
+// import { Link as mLink } from '@material-ui/core/Link';
+// import Link from 'next/link'
+// import DesktopHeader from './nav';
 
 
 
@@ -978,39 +737,40 @@ function Header() {
   // const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
   //  const { sections, title } = props;
   // const title = 'News Now'
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+  return __jsx(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["MuiThemeProvider"], {
+    theme: _themes__WEBPACK_IMPORTED_MODULE_7__["theme"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 55
+    },
+    __self: this
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
     },
     __self: this
   }, __jsx("style", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 57
     },
     __self: this
-  }, "@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');"), __jsx(_heads__WEBPACK_IMPORTED_MODULE_15__["Heads"], {
+  }, "@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');"), __jsx("link", {
+    rel: "shortcut icon",
+    href: "/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 60
     },
     __self: this
-  }), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    xsDown: true,
-    implementation: "js",
+  }), __jsx(_heads__WEBPACK_IMPORTED_MODULE_6__["Heads"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 64
     },
     __self: this
-  }, __jsx(_nav3__WEBPACK_IMPORTED_MODULE_14__["DesktopHeader2"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  })), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_3__["default"], {
     xsDown: true,
     implementation: "js",
     __source: {
@@ -1018,27 +778,41 @@ function Header() {
       lineNumber: 65
     },
     __self: this
-  }, __jsx(_nav3__WEBPACK_IMPORTED_MODULE_14__["DesktopHeader1"], {
+  }, __jsx(_nav3__WEBPACK_IMPORTED_MODULE_5__["DesktopHeader2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
-  })), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    smUp: true,
+  })), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    xsDown: true,
     implementation: "js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 71
     },
     __self: this
-  }, __jsx(_draw1__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, __jsx(_nav3__WEBPACK_IMPORTED_MODULE_5__["DesktopHeader1"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
     },
     __self: this
-  })));
+  })), __jsx(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    smUp: true,
+    implementation: "js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, __jsx(_draw1__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }))));
 }
 Header.propTypes = {
   sections: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array,
@@ -1051,11 +825,12 @@ Header.propTypes = {
 /*!****************************!*\
   !*** ./components/nav3.js ***!
   \****************************/
-/*! exports provided: DesktopHeader1, DesktopHeader2 */
+/*! exports provided: sections, DesktopHeader1, DesktopHeader2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sections", function() { return sections; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesktopHeader1", function() { return DesktopHeader1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesktopHeader2", function() { return DesktopHeader2; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -1112,10 +887,7 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["ma
 
 var sections = [{
   'title': 'Services',
-  'url': '/nation'
-}, {
-  'title': 'Research',
-  'url': '/politics'
+  'url': '/services'
 }, {
   'title': 'Advertise',
   'url': '/grow'
@@ -1126,14 +898,17 @@ var sections = [{
   'title': 'Resources',
   'url': '/resources'
 }, {
-  'title': 'Partner with Us',
+  'title': 'Partners',
   'url': '/partners'
 }, {
-  'title': 'Internships',
+  'title': 'Intern',
   'url': '/intern'
 }, {
   'title': 'Jobs',
   'url': '/jobs'
+}, {
+  'title': 'AI',
+  'url': '/research'
 }, {
   'title': 'About Us',
   'url': '/about'
@@ -1163,7 +938,7 @@ var DesktopHeader1 = function DesktopHeader1() {
     position: "sticky",
     style: {
       boxShadow: '0 8px 6px -6px #AAAAAA',
-      background: '#FFFFFF',
+      background: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_5"],
       height: '42px'
     },
     __source: {
@@ -1227,7 +1002,7 @@ var DesktopHeader2 = function DesktopHeader2() {
   }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     position: "static",
     style: {
-      background: '#FFFFFF',
+      background: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_1"],
       height: '80px',
       color: 'red',
       boxShadow: '0 3px 5px #FFFFFF'
@@ -1256,11 +1031,13 @@ var DesktopHeader2 = function DesktopHeader2() {
     noWrap: true,
     className: classes.toolbarTitle,
     style: {
-      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_11__["FONT_1"]
+      textAlign: 'center',
+      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_11__["FONT_1"],
+      color: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_5"]
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 103
     },
     __self: this
   }, title))));
@@ -1268,6 +1045,70 @@ var DesktopHeader2 = function DesktopHeader2() {
 //   sections: PropTypes.array,
 //   title: PropTypes.string,
 // };
+
+/***/ }),
+
+/***/ "./components/themes.js":
+/*!******************************!*\
+  !*** ./components/themes.js ***!
+  \******************************/
+/*! exports provided: theme */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "theme", function() { return theme; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+
+
+var _theme$typography$h, _theme$typography$h2, _theme$typography$bod;
+
+// export const theme = createMuiTheme();
+
+var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createMuiTheme"])();
+theme.typography.h3 = (_theme$typography$h = {
+  fontSize: '45px',
+  textAlign: 'center',
+  fontFamily1: '"Helvatica", Times, sans-serif'
+}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$h, theme.breakpoints.down('xs'), {
+  fontSize: '30px'
+}), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$h, theme.breakpoints.up('sm'), {
+  fontSize: '30px'
+}), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$h, theme.breakpoints.up('md'), {
+  fontSize: '45px'
+}), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$h, theme.breakpoints.up('xl'), {
+  fontSize: '60px'
+}), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$h, '@media (min-width:2400px)', {
+  fontSize: '80px'
+}), _theme$typography$h);
+theme.typography.h4 = (_theme$typography$h2 = {
+  fontSize: '40px',
+  textAlign: 'center',
+  fontFamily1: '"Helvatica", Times, sans-serif'
+}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$h2, theme.breakpoints.down('xs'), {
+  fontSize: '20px',
+  margin: '0px 0px 0px 0px'
+}), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$h2, theme.breakpoints.up('sm'), {
+  fontSize: '35px',
+  margin: '0px 0px 0px 0px'
+}), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$h2, theme.breakpoints.up('md'), {
+  fontSize: '35px',
+  margin: '20px 20px 20px 20px'
+}), _theme$typography$h2);
+theme.typography.body1 = (_theme$typography$bod = {
+  fontFamily1: '"Helvatica", Times, sans-serif',
+  fontSize: '20px'
+}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$bod, theme.breakpoints.down('xs'), {
+  fontSize: '10px',
+  margin: '0px 0px 0px 0px'
+}), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$bod, theme.breakpoints.up('sm'), {
+  fontSize: '20px',
+  margin: '0px 0px 0px 0px'
+}), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$bod, theme.breakpoints.up('md'), {
+  fontSize: '20px',
+  margin: '20px 20px 20px 20px'
+}), _theme$typography$bod);
 
 /***/ }),
 
@@ -2889,7 +2730,7 @@ var drawerConstants = {
 /*!***************************************!*\
   !*** ./constants/global.constants.js ***!
   \***************************************/
-/*! exports provided: COMPANY_NAME, COMPANY_NAME_SMALL, WEBSITE_URL, BACKEND_URL, SUPPORT_EMAIL, COLOR_1, COLOR_2, COLOR_3, COLOR_4, FONT_1, FONT_2, FONT_3 */
+/*! exports provided: COMPANY_NAME, COMPANY_NAME_SMALL, WEBSITE_URL, BACKEND_URL, SUPPORT_EMAIL, COLOR_1, COLOR_2, COLOR_3, COLOR_4, COLOR_5, FONT_1, FONT_2, FONT_3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2903,6 +2744,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLOR_2", function() { return COLOR_2; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLOR_3", function() { return COLOR_3; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLOR_4", function() { return COLOR_4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLOR_5", function() { return COLOR_5; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FONT_1", function() { return FONT_1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FONT_2", function() { return FONT_2; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FONT_3", function() { return FONT_3; });
@@ -2915,6 +2757,7 @@ var COLOR_1 = '#142850';
 var COLOR_2 = '#27496d';
 var COLOR_3 = '#0c7b93';
 var COLOR_4 = '#00a8cc';
+var COLOR_5 = '#F0F0F0';
 var FONT_1 = "'Anton', sans-serif";
 var FONT_2 = "'Fjalla One', sans-serif";
 var FONT_3 = "'Patua One', cursive";
@@ -2952,7 +2795,7 @@ var STARTUP_ICON = '/static/icons/reocket.png';
 /*!****************************!*\
   !*** ./constants/index.js ***!
   \****************************/
-/*! exports provided: COMPANY_NAME, COMPANY_NAME_SMALL, WEBSITE_URL, BACKEND_URL, SUPPORT_EMAIL, COLOR_1, COLOR_2, COLOR_3, COLOR_4, FONT_1, FONT_2, FONT_3, userConstants, alertConstants, dialogConstants, drawerConstants, countryCodeOptions, MonthNames, NumberRegex, orgConstants, productConstants, mentorConstants, LOGO, LOGO_SMALL, ErrorIcon, NOT_FOUND_ICON, VERIFY_EMAIL_ICON, MENTOR_ICON, STARTUP_ICON, registerOrgConstants, majorCategoryChoices */
+/*! exports provided: COMPANY_NAME, COMPANY_NAME_SMALL, WEBSITE_URL, BACKEND_URL, SUPPORT_EMAIL, COLOR_1, COLOR_2, COLOR_3, COLOR_4, COLOR_5, FONT_1, FONT_2, FONT_3, userConstants, alertConstants, dialogConstants, drawerConstants, countryCodeOptions, MonthNames, NumberRegex, orgConstants, productConstants, mentorConstants, LOGO, LOGO_SMALL, ErrorIcon, NOT_FOUND_ICON, VERIFY_EMAIL_ICON, MENTOR_ICON, STARTUP_ICON, registerOrgConstants, majorCategoryChoices */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2975,6 +2818,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "COLOR_3", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["COLOR_3"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "COLOR_4", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["COLOR_4"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "COLOR_5", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["COLOR_5"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FONT_1", function() { return _global_constants__WEBPACK_IMPORTED_MODULE_0__["FONT_1"]; });
 

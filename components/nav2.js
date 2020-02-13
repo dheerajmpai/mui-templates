@@ -1,19 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import Toolbar from '@material-ui/core/Toolbar';
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
-import Typography from '@material-ui/core/Typography';
-import { Link as mLink } from '@material-ui/core/Link';
-import Link from 'next/link'
-import DesktopHeader from './nav';
-import MobileDrawer from './draw1';
+// import Toolbar from '@material-ui/core/Toolbar';
+// import AppBar from '@material-ui/core/AppBar';
+// import Button from '@material-ui/core/Button';
+// import IconButton from '@material-ui/core/IconButton';
+// import SearchIcon from '@material-ui/icons/Search';
+// import Typography from '@material-ui/core/Typography';
+// import { Link as mLink } from '@material-ui/core/Link';
+// import Link from 'next/link'
+// import DesktopHeader from './nav';
 import Hidden from '@material-ui/core/Hidden';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+import MobileDrawer from './draw1';
 import { DesktopHeader1, DesktopHeader2 } from './nav3';
 import { Heads } from './heads';
+import {theme} from './themes';
+
 
 const useStyles = makeStyles(theme => ({
   toolbar: {
@@ -48,31 +52,34 @@ export default function Header() {
   //  const { sections, title } = props;
   // const title = 'News Now'
   return (
-    <React.Fragment >
-      <style>
-        @import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');
+    <MuiThemeProvider theme={theme}>
+      <React.Fragment >
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Patua+One&display=swap');
       </style>
-      {/* {mobOrDesktop} */}
-      {/* <MobileDrawer/> */}
-      {/* <DesktopHeader /> */}
-      <Heads />
-      <Hidden xsDown implementation="js">
+        <link rel="shortcut icon" href="/favicon.ico" />
+        {/* {mobOrDesktop} */}
+        {/* <MobileDrawer/> */}
+        {/* <DesktopHeader /> */}
+        <Heads />
+        <Hidden xsDown implementation="js">
 
-        {/* <DesktopHeader1 /> */}
-        <DesktopHeader2 />
-      </Hidden >
+          {/* <DesktopHeader1 /> */}
+          <DesktopHeader2 />
+        </Hidden >
 
-      <Hidden xsDown implementation="js">
+        <Hidden xsDown implementation="js">
 
-        <DesktopHeader1 />
-        {/* <DesktopHeader2 /> */}
-      </Hidden >
+          <DesktopHeader1 />
+          {/* <DesktopHeader2 /> */}
+        </Hidden >
 
-      <Hidden smUp implementation="js">
+        <Hidden smUp implementation="js">
 
-        <MobileDrawer />
-      </Hidden>
-    </React.Fragment>
+          <MobileDrawer />
+        </Hidden>
+      </React.Fragment>
+    </MuiThemeProvider>
   );
 }
 

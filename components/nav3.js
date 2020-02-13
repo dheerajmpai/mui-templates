@@ -9,7 +9,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import { Link as mLink } from '@material-ui/core/Link';
 import Link from 'next/link'
-import { COMPANY_NAME, COLOR_1, FONT_1, FONT_2, FONT_3 } from '../constants';
+import { COMPANY_NAME, COLOR_1,COLOR_2,COLOR_3,COLOR_4, COLOR_5,FONT_1, FONT_2, FONT_3 } from '../constants';
 
 
 const useStyles = makeStyles(theme => ({
@@ -33,15 +33,15 @@ const useStyles = makeStyles(theme => ({
 }));
 
 //  const { sections, title } = props;
-const sections = [
-  { 'title': 'Services', 'url': '/nation' },
-  { 'title': 'Research', 'url': '/politics' },
+export const sections = [
+  { 'title': 'Services', 'url': '/services' },
   { 'title': 'Advertise', 'url': '/grow' },
   { 'title': 'Build', 'url': '/build' },
   { 'title': 'Resources', 'url': '/resources' },
-  { 'title': 'Partner with Us', 'url': '/partners' },
-  { 'title': 'Internships', 'url': '/intern' },
+  { 'title': 'Partners', 'url': '/partners' },
+  { 'title': 'Intern', 'url': '/intern' },
   { 'title': 'Jobs', 'url': '/jobs' },
+  { 'title': 'AI', 'url': '/research' },
   { 'title': 'About Us', 'url': '/about' },
   { 'title': 'Contact Us', 'url': '/contact' },
 
@@ -62,7 +62,7 @@ export const DesktopHeader1 = () => {
   const classes = useStyles();
   return (
     <nav>
-      <AppBar position='sticky' style={{ boxShadow: '0 8px 6px -6px #AAAAAA', background: '#FFFFFF', height: '42px' }} >
+      <AppBar position='sticky' style={{ boxShadow: '0 8px 6px -6px #AAAAAA', background: COLOR_5, height: '42px' }} >
         <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
           {sections.map(section => (
             <Link href={section.url}>
@@ -95,9 +95,11 @@ export const DesktopHeader2 = () => {
   const classes = useStyles();
   return (
     <React.Fragment >
-      <AppBar position='static' style={{ background: '#FFFFFF', height: '80px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
+      <AppBar position='static' style={{ background: COLOR_1, height: '80px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
       <Toolbar className={classes.toolbar} style={{ height: '80px', color: 'red' }}>
         {/* <Button size="small"> <Link href='/signup'>  Subscribe</Link></Button> */}
+        {/* <Link href='/'>
+          <a> */}
         <Typography
           component="h2"
           variant="h3"
@@ -105,10 +107,12 @@ export const DesktopHeader2 = () => {
           align="center"
           noWrap
           className={classes.toolbarTitle}
-          style={{ fontFamily: FONT_1 }}
+          style={{ textAlign:'center', fontFamily: FONT_1 , color:COLOR_5}}
         >
           {title}
         </Typography>
+        {/* </a>
+        </Link> */}
         {/* <IconButton>
             <SearchIcon />
           </IconButton> */}

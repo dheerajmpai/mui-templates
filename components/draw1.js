@@ -14,7 +14,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
 import Link from 'next/link';
 import Typography from '@material-ui/core/Typography';
-import {COMPANY_NAME, FONT_1} from '../constants';
+import {COMPANY_NAME, FONT_1, COLOR_1, COLOR_2, COLOR_3, COLOR_4, COLOR_5} from '../constants';
 // import {sections as sec} from './nav2';
 
 // const sec = [{ 'title': 'Nation', 'url': '/nation' },
@@ -116,7 +116,7 @@ export default function MobileDrawer() {
 
 
   const sections = [
-    { 'title': 'Sign Up', 'url': '/signup' },
+    // { 'title': 'Sign Up', 'url': '/signup' },
     { 'title': 'Subscribe', 'url': '/subscribe' },
 
   ]
@@ -125,9 +125,9 @@ export default function MobileDrawer() {
 
   return (
     <div>
-      <AppBar position='static' style={{ background: '#FDDB3A', height: '60px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
+      <AppBar position='static' style={{ background: COLOR_1, height: '60px', color: 'red', boxShadow: '0 3px 5px #FFFFFF' }} >
         <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
-          <Button onClick={toggleDrawer('left', true)}><MenuIcon /></Button>
+          <Button onClick={toggleDrawer('left', true)}><MenuIcon style={{color:COLOR_5}} /></Button>
           <Typography
             component="h5"
             variant="h3"
@@ -136,7 +136,7 @@ export default function MobileDrawer() {
             height='80px'
             noWrap
             className={classes.toolbarTitle}
-            style={{fontFamily:FONT_1}}
+            style={{fontFamily:FONT_1, color:COLOR_5}}
           >
             {title}
           </Typography>

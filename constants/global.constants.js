@@ -9,7 +9,7 @@ export const COLOR_1 = '#142850';
 export const COLOR_2 = '#27496d';
 export const COLOR_3 = '#0c7b93';
 export const COLOR_4 = '#00a8cc';
-
+export const COLOR_5 = '#F0F0F0';
 export const FONT_1 = "'Anton', sans-serif";
 export const FONT_2 = "'Fjalla One', sans-serif";
 export const FONT_3 = "'Patua One', cursive";

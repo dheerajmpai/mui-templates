@@ -4,8 +4,8 @@ import Divider from '@material-ui/core/Divider';
 
 import { createMuiTheme, MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles';
 import { COMPANY_NAME, COLOR_1, FONT_1, FONT_2, FONT_3 } from '../constants';
-
-const theme = createMuiTheme();
+import {theme} from './themes';
+// const theme = createMuiTheme();
 
 
 // style={{ width: '100%', textAlign: 'center', margin: '20px auto', fontFamily: fontFamily1 }}
@@ -15,20 +15,20 @@ export const Para1 = para => {
   const fontFamily2 = '"Roboto", Times, sans-serif'
   return <Typography variant='body1' style={{ textAlign: 'justify', fontSize: textFontSize, fontFamily: fontFamily1 }}>{para.children}</Typography>
 }
-
 export const Para2 = para => {
   const textFontSize = '20px'
   const fontFamily1 = '"Helvatica", Times, sans-serif'
   const fontFamily2 = '"Roboto", Times, sans-serif'
   return <Typography variant='body1' style={{ textAlign: 'justify', fontSize: textFontSize, fontFamily: fontFamily2 }}>{para.children}</Typography>
 }
+// fontSize: textFontSize
 
 export const Para3 = para => {
   const textFontSize = '20px'
   const fontFamily1 = FONT_3
   const fontFamily2 = '"Roboto", Times, sans-serif'
   const stl = para.style
-  return <Typography variant='body1' style={{ ...stl, textAlign: 'justify', fontSize: textFontSize, fontFamily: fontFamily1 }}>{para.children}</Typography>
+  return <Typography variant='body1' style={{ ...stl, textAlign: 'justify', fontFamily: fontFamily1 }}>{para.children}</Typography>
 }
 export const Title1 = title => {
   const textFontSize = '45px'
@@ -45,10 +45,11 @@ export const Title2 = para => {
 }
 
 export const Title3 = para => {
+
   const textFontSize = '40px'
   const fontFamily1 = '"Helvatica", Times, sans-serif'
   const fontFamily2 = FONT_2
-  return <Typography variant='body1' style={{ textAlign: 'justify', fontSize: textFontSize, fontFamily: fontFamily2 }}>{para.children}</Typography>
+  return <Typography variant='h4' style={{ textAlign: 'center',  fontFamily: fontFamily2 }}>{para.children}</Typography>
 }
 
 export const Title4 = title => {
