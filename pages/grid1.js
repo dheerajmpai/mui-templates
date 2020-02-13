@@ -12,7 +12,6 @@ export default function GridPage() {
     const Mar = <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
     return (
         <React.Fragment>
-            {/* <Container> */}
             <Grid container spacing={1}>
 
                 <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
@@ -38,6 +37,7 @@ export default function GridPage() {
 
                 <Grid item xs={12} sm={5} style={{ textAlign: 'center', verticalAlign: 'middle', lineHeight: '100%' }} >
                     <Paper elevation={0} ><Title3>GROW YOUR ONLINE PRESENCE</Title3></Paper>
+                    <Divider2 />
 
                     <Paper elevation={0}><Para3>Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation web-dev technologies. <Link href='/build'>Read More</Link></Para3></Paper>
                     {Mar}
@@ -79,6 +79,7 @@ export default function GridPage() {
 
                 <Grid item xs={12} sm={5} style={{ textAlign: 'center', verticalAlign: 'middle', lineHeight: '100%' }} >
                     <Paper elevation={0} ><Title3>JOIN THE COMMUNITY</Title3></Paper>
+                    <Divider2 />
 
                     <Paper elevation={0}><Para3>Join the Hyperweb AI community in developing impactful technologies that change the world.<Link href='/slack'>Read More</Link></Para3>  </Paper>
                     {Mar}
@@ -96,11 +97,9 @@ export default function GridPage() {
 
 
                 <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
-                {/* <Grid item xs={12}><Divider2/></Grid> */}
 
 
             </Grid>
-            {/* </Container> */}
         </React.Fragment>
 
 
