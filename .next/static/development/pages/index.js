@@ -1097,7 +1097,7 @@ theme.typography.body1 = (_theme$typography$bod = {
   fontFamily1: '"Helvatica", Times, sans-serif',
   fontSize: '20px'
 }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$bod, theme.breakpoints.down('xs'), {
-  fontSize: '10px',
+  fontSize: '20px',
   margin: '0px 0px 0px 0px'
 }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_theme$typography$bod, theme.breakpoints.up('sm'), {
   fontSize: '20px',

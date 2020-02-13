@@ -1162,7 +1162,7 @@ theme.typography.body1 = {
   fontFamily1: '"Helvatica", Times, sans-serif',
   fontSize: '20px',
   [theme.breakpoints.down('xs')]: {
-    fontSize: '10px',
+    fontSize: '20px',
     margin: '0px 0px 0px 0px'
   },
   [theme.breakpoints.up('sm')]: {
