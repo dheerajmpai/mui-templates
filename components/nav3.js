@@ -61,7 +61,7 @@ const title = COMPANY_NAME
 export const DesktopHeader1 = () => {
   const classes = useStyles();
   return (
-    <nav>
+    // <nav>
       <AppBar position='sticky' style={{ boxShadow: '0 8px 6px -6px #AAAAAA', background: COLOR_5, height: '42px' }} >
         <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
           {sections.map(section => (
@@ -86,7 +86,7 @@ export const DesktopHeader1 = () => {
           {/*<Link href='/about'>Know about us</Link>*/}
         </Toolbar>
       </AppBar>
-    </nav>
+    // </nav>
   )
 }
 
