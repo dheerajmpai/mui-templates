@@ -9,6 +9,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import { Link as mLink } from '@material-ui/core/Link';
 import Link from 'next/link'
+import Head from 'next/head';
 import { COMPANY_NAME, COLOR_1,COLOR_2,COLOR_3,COLOR_4, COLOR_5,FONT_1, FONT_2, FONT_3 } from '../constants';
 
 

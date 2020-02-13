@@ -685,26 +685,54 @@ const Heads = () => {
   var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
   var thisIsMyCopy2 = '<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-127071484-15"></script>';
   var thisIsMyCopy3 = "<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-127071484-15');</script>";
+  var thisIsMtrack = `<script type="text/javascript">
+    var _paq = window._paq || [];
+  
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setCookieDomain", "*.hyperweb.ai"]);
+    _paq.push(["setDomains", ["*.hyperweb.ai"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://hai.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/hai.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="https://hai.matomo.cloud/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+  `;
   return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 27
     },
     __self: undefined
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 28
     },
     __self: undefined
   }, _constants__WEBPACK_IMPORTED_MODULE_2__["COMPANY_NAME"]), __jsx("div", {
+    className: "content",
+    dangerouslySetInnerHTML: {
+      __html: thisIsMtrack
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }), __jsx("div", {
     className: "content",
     dangerouslySetInnerHTML: {
       __html: thisIsMyCopy2
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 31
     },
     __self: undefined
   }), __jsx("div", {
@@ -714,7 +742,7 @@ const Heads = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 32
     },
     __self: undefined
   }));
@@ -912,9 +940,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/nav3.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -987,7 +1018,7 @@ const sections = [{
 // { 'title': 'About Us', 'url': 'https://news.tess.now.sh/about' },
 // ]
 
-const title = _constants__WEBPACK_IMPORTED_MODULE_11__["COMPANY_NAME"];
+const title = _constants__WEBPACK_IMPORTED_MODULE_12__["COMPANY_NAME"];
 const DesktopHeader1 = () => {
   const classes = useStyles();
   return (// <nav>
@@ -995,12 +1026,12 @@ const DesktopHeader1 = () => {
       position: "sticky",
       style: {
         boxShadow: '0 8px 6px -6px #AAAAAA',
-        background: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_5"],
+        background: _constants__WEBPACK_IMPORTED_MODULE_12__["COLOR_5"],
         height: '42px'
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 66
       },
       __self: undefined
     }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1009,14 +1040,14 @@ const DesktopHeader1 = () => {
       className: classes.toolbarSecondary,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 67
       },
       __self: undefined
     }, sections.map(section => __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
       href: section.url,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 69
       },
       __self: undefined
     }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -1026,7 +1057,7 @@ const DesktopHeader1 = () => {
       variant: "text",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 71
       },
       __self: undefined
     }, __jsx("mLink", {
@@ -1037,11 +1068,11 @@ const DesktopHeader1 = () => {
       href: section.url,
       className: classes.toolbarLink,
       style: {
-        fontFamily: _constants__WEBPACK_IMPORTED_MODULE_11__["FONT_2"]
+        fontFamily: _constants__WEBPACK_IMPORTED_MODULE_12__["FONT_2"]
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71
+        lineNumber: 72
       },
       __self: undefined
     }, section.title)))))) // </nav>
@@ -1053,20 +1084,20 @@ const DesktopHeader2 = () => {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: undefined
   }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
     position: "static",
     style: {
-      background: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_1"],
+      background: _constants__WEBPACK_IMPORTED_MODULE_12__["COLOR_1"],
       height: '80px',
       color: 'red',
       boxShadow: '0 3px 5px #FFFFFF'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 99
     },
     __self: undefined
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1077,7 +1108,7 @@ const DesktopHeader2 = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: undefined
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -1089,12 +1120,12 @@ const DesktopHeader2 = () => {
     className: classes.toolbarTitle,
     style: {
       textAlign: 'center',
-      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_11__["FONT_1"],
-      color: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_5"]
+      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_12__["FONT_1"],
+      color: _constants__WEBPACK_IMPORTED_MODULE_12__["COLOR_5"]
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: undefined
   }, title))));

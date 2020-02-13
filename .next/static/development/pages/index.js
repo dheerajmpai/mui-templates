@@ -628,26 +628,37 @@ var Heads = function Heads() {
   var thisIsMyCopy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZS3O0OOn0a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
   var thisIsMyCopy2 = '<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-127071484-15"></script>';
   var thisIsMyCopy3 = "<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-127071484-15');</script>";
+  var thisIsMtrack = "<script type=\"text/javascript\">\n    var _paq = window._paq || [];\n  \n    _paq.push([\"setDocumentTitle\", document.domain + \"/\" + document.title]);\n    _paq.push([\"setCookieDomain\", \"*.hyperweb.ai\"]);\n    _paq.push([\"setDomains\", [\"*.hyperweb.ai\"]]);\n    _paq.push(['trackPageView']);\n    _paq.push(['enableLinkTracking']);\n    (function() {\n      var u=\"https://hai.matomo.cloud/\";\n      _paq.push(['setTrackerUrl', u+'matomo.php']);\n      _paq.push(['setSiteId', '1']);\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/hai.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);\n    })();\n  </script>\n  <noscript><p><img src=\"https://hai.matomo.cloud/matomo.php?idsite=1&amp;rec=1\" style=\"border:0;\" alt=\"\" /></p></noscript>\n  ";
   return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 27
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 28
     },
     __self: this
   }, _constants__WEBPACK_IMPORTED_MODULE_2__["COMPANY_NAME"]), __jsx("div", {
+    className: "content",
+    dangerouslySetInnerHTML: {
+      __html: thisIsMtrack
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }), __jsx("div", {
     className: "content",
     dangerouslySetInnerHTML: {
       __html: thisIsMyCopy2
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 31
     },
     __self: this
   }), __jsx("div", {
@@ -657,7 +668,7 @@ var Heads = function Heads() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 32
     },
     __self: this
   }));
@@ -848,9 +859,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Link */ "./node_modules/@material-ui/core/esm/Link/index.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
 var _jsxFileName = "/home/pai/zz/DEF/PROJS/HYPERWEB/components/nav3.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -925,7 +939,7 @@ var sections = [{
 // { 'title': 'About Us', 'url': 'https://news.tess.now.sh/about' },
 // ]
 
-var title = _constants__WEBPACK_IMPORTED_MODULE_11__["COMPANY_NAME"];
+var title = _constants__WEBPACK_IMPORTED_MODULE_12__["COMPANY_NAME"];
 var DesktopHeader1 = function DesktopHeader1() {
   var classes = useStyles();
   return (// <nav>
@@ -933,12 +947,12 @@ var DesktopHeader1 = function DesktopHeader1() {
       position: "sticky",
       style: {
         boxShadow: '0 8px 6px -6px #AAAAAA',
-        background: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_5"],
+        background: _constants__WEBPACK_IMPORTED_MODULE_12__["COLOR_5"],
         height: '42px'
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 66
       },
       __self: this
     }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -947,7 +961,7 @@ var DesktopHeader1 = function DesktopHeader1() {
       className: classes.toolbarSecondary,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 67
       },
       __self: this
     }, sections.map(function (section) {
@@ -955,7 +969,7 @@ var DesktopHeader1 = function DesktopHeader1() {
         href: section.url,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 69
         },
         __self: this
       }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -965,7 +979,7 @@ var DesktopHeader1 = function DesktopHeader1() {
         variant: "text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 71
         },
         __self: this
       }, __jsx("mLink", {
@@ -976,11 +990,11 @@ var DesktopHeader1 = function DesktopHeader1() {
         href: section.url,
         className: classes.toolbarLink,
         style: {
-          fontFamily: _constants__WEBPACK_IMPORTED_MODULE_11__["FONT_2"]
+          fontFamily: _constants__WEBPACK_IMPORTED_MODULE_12__["FONT_2"]
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 72
         },
         __self: this
       }, section.title)));
@@ -993,20 +1007,20 @@ var DesktopHeader2 = function DesktopHeader2() {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: this
   }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     position: "static",
     style: {
-      background: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_1"],
+      background: _constants__WEBPACK_IMPORTED_MODULE_12__["COLOR_1"],
       height: '80px',
       color: 'red',
       boxShadow: '0 3px 5px #FFFFFF'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 99
     },
     __self: this
   }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1017,7 +1031,7 @@ var DesktopHeader2 = function DesktopHeader2() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: this
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -1029,12 +1043,12 @@ var DesktopHeader2 = function DesktopHeader2() {
     className: classes.toolbarTitle,
     style: {
       textAlign: 'center',
-      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_11__["FONT_1"],
-      color: _constants__WEBPACK_IMPORTED_MODULE_11__["COLOR_5"]
+      fontFamily: _constants__WEBPACK_IMPORTED_MODULE_12__["FONT_1"],
+      color: _constants__WEBPACK_IMPORTED_MODULE_12__["COLOR_5"]
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: this
   }, title))));
