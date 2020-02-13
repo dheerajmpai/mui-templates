@@ -1,4 +1,4 @@
-export const COMPANY_NAME = "ADVAIT LABS";
+export const COMPANY_NAME = "HYPERWEB AI";
 export const COMPANY_NAME_SMALL = "Hyperweb AI";
 
 export const WEBSITE_URL = "https://hyperweb.ai";
