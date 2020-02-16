@@ -17,10 +17,6 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/legal/privacy-policy": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/legal/terms": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
