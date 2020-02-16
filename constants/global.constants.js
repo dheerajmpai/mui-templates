@@ -17,7 +17,3 @@ export const COLOR_5 = '#F0F0F0';
 export const FONT_1 = "'Anton', sans-serif";
 export const FONT_2 = "'Fjalla One', sans-serif";
 export const FONT_3 = "'Patua One', cursive";
-
-
-
-
