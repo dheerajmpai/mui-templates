@@ -1,0 +1,126 @@
+import React from 'react';
+import { render } from 'react-dom';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import Hidden from '@material-ui/core/Hidden';
+
+import Divider from '@material-ui/core/Divider';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Container from '@material-ui/core/Container';
+import FeaturedPost from '../FeaturedPost';
+import Convert from '../../components/converter';
+import v2 from '../../api/v1'
+import DesktopHeader from '../../components/templates/nav';
+import Header from '../../components/templates/nav2';
+import { Para1, Para2, Title1 } from '../../components/shardtypes';
+import Article1 from '../../components/article';
+import {Ad} from '../../components/ad';
+import RecipeReviewCard from '../../components/card3';
+
+import {Sidebar1, Sidebar2, Sidebar3} from '../../components/sidebar';
+const theme = createMuiTheme();
+// const theme = createMuiTheme();
+theme.typography.h3 = {
+  fontSize: '45px',
+  textAlign: 'center',
+  fontFamily1: '"Helvatica", Times, sans-serif',
+  [theme.breakpoints.down('xs')]: {
+    fontSize: '20px',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '26px',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '45px',
+  },
+  [theme.breakpoints.up('xl')]: {
+    fontSize: '60px',
+  },
+  '@media (min-width:2400px)': {
+    fontSize: '80px',
+  },
+};
+
+theme.typography.body1 = {
+  fontFamily1: '"Helvatica", Times, sans-serif',
+  fontSize: '20px',
+  [theme.breakpoints.down('xs')]: {
+    fontSize: '10px',
+    margin: '0px 0px 0px 0px' ,
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '20px',
+    margin: '0px 0px 0px 0px' ,
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '20px',
+    margin: '20px 20px 20px 20px' ,
+  },
+
+};
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+  },
+}));
+
+export default function App() {
+  const post = {
+    'title': 'IISc and Think India conduct youth conference to engage young students towards ‘Mission 2020’.',
+    'description': 'Student council of Indian Institute of Science, Bengaluru and Think India organization organized the conference ‘Jagruti 2020’ , a national level youth conference on the theme of ‘Mission 2020’. The key agenda of the event was to discuss ideas on achieving the vision of Dr Abdul Kalam ‘Mission 2020’ and the way forward. Students and scholars across the country presented their idea in the form of Paper, poster and models. The conference also had lectures by eminent personalities including environmentalist Saalu Marada Timmakka, social worker Dr. Tejaswini Ananthakumar and Dr. Ramaswami Balasubramaniam. The conference also had multiple panel discussions presided by Director CESS Prof M K Shridhar, Deputy Director of IISc Prof. Rudra Pratap, Director of NITK Professor Uma Maheshwar, Co-founder of Barefoot IT Dr. Srijan Pal Singh, Director General of PC&SI DRDO – Dr. S Guruprasad.',
+    'content': [
+      { 'type': 'p1' , 'data': 'Student council of Indian Institute of Science, Bengaluru and Think India organization organized the conference ‘Jagruti 2020’ , a national level youth conference on the theme of ‘Mission 2020’. The key agenda of the event was to discuss ideas on achieving the vision of Dr Abdul Kalam ‘Mission 2020’ and the way forward. Students and scholars across the country presented their idea in the form of Paper, poster and models. The conference also had lectures by eminent personalities including environmentalist Saalu Marada Timmakka, social worker Dr. Tejaswini Ananthakumar and Dr. Ramaswami Balasubramaniam. The conference also had multiple panel discussions presided by Director CESS Prof M K Shridhar, Deputy Director of IISc Prof. Rudra Pratap, Director of NITK Professor Uma Maheshwar, Co-founder of Barefoot IT Dr. Srijan Pal Singh, Director General of PC&SI DRDO – Dr. S Guruprasad.' },
+      { 'type': 'img', 'data': '/static/images/thimmakka.jpeg' },
+      { 'type': 'p1' , 'data': 'The All India Youth Conference Jagruti was first started in 2017 under the leadership of Student Council of IISc and Think India. It is one of the few academic conferences that are focused on societal issues. The first conference took place in 2017 and consisted discussions on wide variety of topics from startups to gender equality. In 2019, the conference was held around the theme “Sustaining the rural habitat”.'},
+    ],
+
+    'content1': { 'type': 'p1' , 'data': 'Student council of Indian Institute of Science, Bengaluru and Think India organization organized the conference ‘Jagruti 2020’ , a national level youth conference on the theme of ‘Mission 2020’. The key agenda of the event was to discuss ideas on achieving the vision of Dr Abdul Kalam ‘Mission 2020’ and the way forward. Students and scholars across the country presented their idea in the form of Paper, poster and models. The conference also had lectures by eminent personalities including environmentalist Saalu Marada Timmakka, social worker Dr. Tejaswini Ananthakumar and Dr. Ramaswami Balasubramaniam. The conference also had multiple panel discussions presided by Director CESS Prof M K Shridhar, Deputy Director of IISc Prof. Rudra Pratap, Director of NITK Professor Uma Maheshwar, Co-founder of Barefoot IT Dr. Srijan Pal Singh, Director General of PC&SI DRDO – Dr. S Guruprasad.' },
+    'fImage': '/static/images/ad.png',
+    'image2': '/static/images/thimmakka.jpeg',
+    'description2': 'The lectures and panel discussions were on wide range of topics from rural development to getting women in STEM. Around 52 papers were presented in the conference and 6 models were presented. Participants consisted academic researchers, startup-entrepreneurs and students. ',
+    'title2': 'About Jagruthi',
+    'description3': 'The All India Youth Conference Jagruti was first started in 2017 under the leadership of Student Council of IISc and Think India. It is one of the few academic conferences that are focused on societal issues. The first conference took place in 2017 and consisted discussions on wide variety of topics from startups to gender equality. In 2019, the conference was held around the theme “Sustaining the rural habitat”. ',
+
+  }
+
+  const classes = useStyles();
+
+  const textFontSize = '20px'
+  const fontFamily1 = '"Helvatica", Times, sans-serif'
+  const fontFamily2 = '"Roboto", Times, sans-serif'
+  // const v2res = v2('health-minister-and-cabinet-secretary-hold-review-meetings-on-novel-coronavirus')
+  // console.log('BOBO',v2res)
+  return (
+    <MuiThemeProvider theme={theme}>
+      <Header/>
+      <Container>
+      <Grid container spacing={2}>
+        <Grid item xs={11} backgroundColor='red'>
+          <Paper elevation={0} backgroundColor='white'> </Paper>
+        </Grid>
+        <Hidden smDown implementation='js'>
+        <Grid item xs={12} sm={3} md={3}>
+          <Paper elevation={0} className={classes.paper}><Sidebar3/><Sidebar1/><Sidebar1/></Paper>
+        </Grid>
+        </Hidden>
+        <Grid item xs={12} sm={9} md={6} spacing={1}>
+          <Paper elevation={0} className={classes.paper}><Article1 post={post} /></Paper>
+          <RecipeReviewCard src='/static/images/politics.jpeg' />
+          <RecipeReviewCard src='/static/images/iisc.jpeg' />
+          <RecipeReviewCard src='/static/images/rohit_sharma.webp' />
+          <RecipeReviewCard src='/static/images/politics.jpeg' />
+        </Grid>
+        <Grid item xs={12} sm={3} md={3}>
+        
+        {/* <Divider orientation="vertical" style={{backgroundColor: 'black'}} /> */}
+          <Paper elevation={0} className={classes.paper}><Sidebar2/></Paper>
+        </Grid>
+      </Grid>
+      
+      </Container>
+    </MuiThemeProvider>
+  );
+}
