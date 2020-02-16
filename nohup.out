@@ -6,3 +6,5 @@ nm-applet-Message: PID 19642 (we are 19642) sent signal 15, shutting down...
 (nm-applet:19642): libappindicator-WARNING **: Unable to send signal for NewStatus: The connection is closed
 
 (nm-applet:19642): GLib-CRITICAL **: Source ID 101 was not found when attempting to remove it
+
+(nm-applet:6580): nm-applet-WARNING **: Could not find ShellVersion property on org.gnome.Shell after 5 tries

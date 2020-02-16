@@ -1,5 +1,7 @@
 export const COMPANY_NAME = "HYPERWEB AI";
 export const COMPANY_NAME_SMALL = "Hyperweb AI";
+export const COMPANY_LEGAL_NAME = 'HYPERWEB MEDIA PRIVATE LIMITED'
+
 
 export const WEBSITE_URL = "https://hyperweb.ai";
 export const BACKEND_URL = "https://api.hyperweb.ai/v1/";
