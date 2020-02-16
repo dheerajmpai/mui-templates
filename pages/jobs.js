@@ -26,7 +26,7 @@ export default function App() {
 <h1>Contact Us</h1>
 
 <p>
-We are looking for Full stack developer interns who are good at ReactJS, React Native and Django REST Framework. If you are interested send your resumes : talent [at] sae [dot] news
+We are looking for Full stack developers who are good at ReactJS, React Native and Django REST Framework. If you are interested send your resumes : talent [at] sae [dot] news
 </p>
  </Typography>
 </Article1>
