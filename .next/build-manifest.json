@@ -17,6 +17,14 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
+    "/build": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/grow": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/jobs": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -30,6 +38,10 @@
       "static/runtime/main.js"
     ],
     "/resources": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/services": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
