@@ -18,7 +18,7 @@ export default function GridPage() {
                 <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
 
                 <Grid item xs={12} sm={6}>
-                    <Paper elevation={0} style={{ textAlign: 'center' }}><img src='/brand2.jpeg' style={{ borderRadius: '1px', width: '90%', margin: '2px auto' }} /></Paper>
+                    <Paper elevation={0} style={{ textAlign: 'center' }}><img src='/inspyre.jpeg' style={{ borderRadius: '1px', width: '90%', margin: '2px auto' }} /></Paper>
                 </Grid>
 
                 <Grid item xs={12} sm={6} style={{ textAlign: 'center', verticalAlign: 'middle', lineHeight: '100%' }}>
@@ -37,19 +37,19 @@ export default function GridPage() {
                 <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
 
                 <Grid item xs={12} sm={5} style={{ textAlign: 'center', verticalAlign: 'middle', lineHeight: '100%' }} >
-                    <Paper elevation={0} ><Title3>GROW YOUR ONLINE PRESENCE</Title3></Paper>
+                    <Paper elevation={0} ><Title3>The Language project</Title3></Paper>
 
-                    <Paper elevation={0}><Para3>Build blazing fast websites with advanced tools of Hyperweb AI. Stand out of the crowd and stand up in the search engine ranking with the next generation web-dev technologies. <Link href='/build'>Read More</Link></Para3></Paper>
+                    <Paper elevation={0}><Para3>Do you know that German Wikipedia has around 2 Million articles while the highest an Indian language has is only 91,000 (Tamil Wikipedia). The Language Project is a collaboration with Awakened Indian to bridge the gap. Around 30 volunteers from the Language project regularly translate Wikipedia articles from English to Kannada. These articles are later used as datasets for the tranlsation engine in Hyperweb AI <Link href='/tlp'>Read More</Link></Para3></Paper>
                     {Mar}
 
-                    <Paper elevation={0} ><Button color='primary'><Para3>Start Building your website for FREE!</Para3></Button></Paper>
+                    <Paper elevation={0} ><Button color='primary'><Para3>Join the community here</Para3></Button></Paper>
                     <Divider2 />
                 </Grid>
 
 
 
                 <Grid item xs={12} sm={7} >
-                    <Paper elevation={0} style={{ textAlign: 'center' }}><img src='/speed1.jpeg' style={{ borderRadius: '1px', width: '90%', margin: '2px auto' }} /></Paper>
+                    <Paper elevation={0} style={{ textAlign: 'center' }}><img src='/wiki.jpeg' style={{ borderRadius: '1px', width: '90%', margin: '2px auto' }} /></Paper>
                 </Grid>
 
                 <Grid item xs={12}><div style={{ margin: '50px 0px 50px 0px' }}> </div></Grid>
